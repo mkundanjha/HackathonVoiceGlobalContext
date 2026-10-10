@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Context Console</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --border: #e2e5ea;
+    --text: #1c2333;
+    --muted: #5f6878;
+    --faint: #8a93a3;
+    --accent: #2563eb;
+    --accent-soft: #e8efff;
+    --ok: #16884a;
+    --ok-soft: #e6f5ec;
+    --warn: #b26b00;
+    --warn-soft: #fff4e0;
+    --err: #c73636;
+    --err-soft: #fdeaea;
+    --idle: #eef0f3;
+    --voice: #7c3aed;
+    --voice-soft: #f2ebff;
+    --chat: #0e7490;
+    --chat-soft: #e3f5f8;
+    --learned: #faf7ff;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; background: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 5; flex-wrap: wrap; }
+  header h1 { font-size: 17px; margin: 0; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: 12.5px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill { font-size: 12px; padding: 3px 10px; border-radius: 99px; background: var(--idle); color: var(--muted); white-space: nowrap; }
+  .pill.ok { background: var(--ok-soft); color: var(--ok); }
+  .pill.active { background: var(--accent-soft); color: var(--accent); }
+  .pill.voice { background: var(--voice-soft); color: var(--voice); }
+  .pill.err { background: var(--err-soft); color: var(--err); }
+
+  .layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 16px; padding: 16px 20px 24px; max-width: 1500px; margin: 0 auto; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; padding: 12px 16px; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
+  .card h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .side { display: flex; flex-direction: column; gap: 14px; }
+  .main { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  #demoGlidLabel[hidden], #demoGlid[hidden] { display: none; }
+  input[type=text], select { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: #fff; color: var(--text); }
+  input[type=text]:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+  .seg { display: flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-top: 10px; }
+  .seg button { flex: 1; border: 0; background: #fff; padding: 7px; font: inherit; cursor: pointer; color: var(--muted); }
+  .seg button.on { background: var(--accent); color: #fff; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .chip { font-size: 12px; border: 1px solid var(--border); background: #fff; border-radius: 99px; padding: 3px 9px; cursor: pointer; color: var(--muted); }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--border); background: #fff; color: var(--text); border-radius: 8px; padding: 9px 12px; font: inherit; cursor: pointer; }
+  .btn:hover:not(:disabled) { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.voice { background: var(--voice); border-color: var(--voice); color: #fff; }
+  .btn.chat { background: var(--chat); border-color: var(--chat); color: #fff; }
+  .btn.hang { background: var(--err); border-color: var(--err); color: #fff; }
+  .btn.small { padding: 3px 8px; font-size: 11.5px; }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .stack { display: flex; flex-direction: column; gap: 8px; }
+  .hint { font-size: 12px; color: var(--faint); margin: 8px 0 0; }
+  .check { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+  .errbox { display: none; margin-top: 8px; background: var(--err-soft); color: var(--err); border-radius: 8px; padding: 8px; font: 11px/1.4 ui-monospace, monospace; white-space: pre-wrap; max-height: 200px; overflow: auto; }
+  .errbox.show { display: block; }
+
+  /* Flow */
+  .flow-row { margin-bottom: 12px; }
+  .flow-row:last-child { margin-bottom: 0; }
+  .flow-title { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .flow { display: flex; align-items: stretch; overflow-x: auto; padding-bottom: 4px; }
+  .node { flex: 1 0 112px; min-width: 112px; border: 1px solid var(--border); border-radius: 9px; padding: 7px 9px; background: var(--idle); transition: background .25s, border-color .25s; }
+  .node .n-title { font-weight: 600; font-size: 12.5px; }
+  .node .n-sub { font-size: 11px; color: var(--faint); }
+  .node .n-detail { font-size: 11.5px; color: var(--muted); margin-top: 3px; min-height: 16px; word-break: break-word; }
+  .node.active { background: var(--accent-soft); border-color: var(--accent); animation: pulse 1.2s infinite; }
+  .node.done { background: var(--ok-soft); border-color: #9fd6b5; }
+  .node.miss { background: var(--warn-soft); border-color: #f0cf8f; }
+  .node.error { background: var(--err-soft); border-color: #eeb0b0; }
+  .node.skip { background: #fafbfc; border-style: dashed; opacity: .6; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 4px var(--accent-soft); } }
+  .arrow { flex: 0 0 20px; display: flex; align-items: center; justify-content: center; color: var(--faint); }
+
+  .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+  @media (max-width: 1100px) { .split { grid-template-columns: 1fr; } }
+
+  /* Conversation */
+  .convo, .ctx { display: flex; flex-direction: column; height: 640px; }
+  .status { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); padding: 6px 10px; border-radius: 8px; background: var(--idle); margin-bottom: 10px; }
+  .status.voice { background: var(--voice-soft); color: var(--voice); }
+  .status.chat { background: var(--chat-soft); color: var(--chat); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: .5; }
+  .status.live .dot { opacity: 1; animation: blink 1.2s infinite; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .timeline { flex: 1; overflow-y: auto; padding: 4px 2px; }
+  .msg { max-width: 85%; margin: 6px 0; padding: 7px 11px; border-radius: 12px; white-space: pre-wrap; word-wrap: break-word; font-size: 13.5px; }
+  .msg.bot { background: #f3f4f6; border-bottom-left-radius: 4px; }
+  .msg.user { background: var(--accent); color: #fff; margin-left: auto; border-bottom-right-radius: 4px; }
+  .divider { display: flex; align-items: center; gap: 8px; font-size: 11.5px; color: var(--faint); margin: 14px 0 6px; }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+  .note { font-size: 11.5px; color: var(--faint); text-align: center; margin: 4px 0 10px; }
+  .note.ok { color: var(--ok); }
+  .empty { color: var(--faint); text-align: center; margin-top: 60px; font-size: 13px; }
+  .composer { display: none; gap: 8px; margin-top: 10px; }
+  .composer.show { display: flex; }
+  .composer input { flex: 1; }
+
+  /* Context file */
+  .ctx-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; font-size: 12px; color: var(--muted); }
+  .ctx-tools { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-size: 12px; color: var(--muted); }
+  .ctx-tools select { width: auto; padding: 4px 8px; font-size: 12px; }
+  .changes { display: none; border: 1px solid #9fd6b5; background: var(--ok-soft); border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; font-size: 12.5px; }
+  .changes.show { display: block; }
+  .changes b { color: var(--ok); }
+  .changes ul { margin: 4px 0 0; padding-left: 18px; }
+  .changes .sec { color: var(--muted); font-size: 11.5px; }
+  .changes li { margin: 5px 0; }
+  .changes .change-label { font-weight: 600; }
+  .changes details { margin-top: 8px; }
+  .changes summary { cursor: pointer; color: var(--muted); }
+  .changes .change-detail { max-height: 240px; overflow-y: auto; margin-top: 6px; }
+  .ctx-body { flex: 1; overflow-y: auto; border: 1px solid var(--border); border-radius: 9px; padding: 2px 14px 12px; }
+  .ctx-body h3 { font-size: 15px; margin: 12px 0 4px; }
+  .ctx-body h4 { font-size: 13px; margin: 14px 0 4px; color: var(--accent); }
+  .ctx-body ul { margin: 4px 0; padding-left: 18px; }
+  .ctx-body li { margin: 3px 0; font-size: 13px; }
+  .ctx-body li.learned { background: var(--learned); border-left: 3px solid var(--voice); padding: 1px 6px; list-style: none; margin-left: -18px; }
+  .ctx-body li.fresh { background: var(--ok-soft); border-left: 3px solid var(--ok); padding: 1px 6px; list-style: none; margin-left: -18px; }
+  .ctx-body p { margin: 6px 0; font-size: 13px; }
+  .ctx-body ul.guide { background: var(--accent-soft); border-radius: 8px; padding: 8px 10px 8px 26px; }
+  .ctx-body ul.guide li { font-size: 13px; }
+  .ctx-body code { background: var(--idle); padding: 0 4px; border-radius: 4px; font-size: 12px; }
+  .src { color: var(--faint); font-size: 11.5px; }
+  .legend { display: flex; gap: 12px; font-size: 11.5px; color: var(--faint); margin-top: 6px; }
+  .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .legend .l-learned::before { background: var(--learned); border-left: 3px solid var(--voice); }
+  .legend .l-fresh::before { background: var(--ok-soft); border-left: 3px solid var(--ok); }
+  details.fm { margin: 10px 0; font-size: 12px; }
+  details.fm pre { background: var(--idle); padding: 8px; border-radius: 6px; overflow-x: auto; font-size: 11.5px; }
+  .history-demo > summary { cursor: pointer; font-weight: 600; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .history-demo > summary::before { content: '▸'; color: var(--muted); }
+  .history-demo[open] > summary::before { content: '▾'; }
+  .collapsible > summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--muted); }
+  .collapsible[open] > summary { margin-bottom: 12px; }
+  .context-comparison { margin-bottom: 10px; }
+  .demo-fields { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; margin: 12px 0; }
+  .demo-fields input, .demo-fields select { width: 100%; }
+  .demo-result { margin-top: 10px; font-size: 13px; color: var(--ok); }
+  .demo-result.error { color: var(--err); }
+  .demo-metrics { font-size: 12px; color: var(--muted); margin: 6px 0; }
+  .demo-details { font-size: 12px; margin-top: 8px; }
+  .demo-details pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 180px; overflow-y: auto; background: var(--idle); padding: 8px; }
+  @media (max-width: 600px) { .demo-fields { grid-template-columns: 1fr 1fr; } }
+
+  .mem-item { border: 1px solid var(--border); border-radius: 8px; padding: 6px 9px; margin-bottom: 6px; font-size: 12.5px; }
+  .mem-item summary { cursor: pointer; }
+  .mem-item .t { color: var(--muted); font-size: 12px; margin: 3px 0 0 4px; }
+  details.logwrap summary { cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .log { font: 11.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; max-height: 220px; overflow-y: auto; background: #fbfcfd; border: 1px solid var(--border); border-radius: 8px; padding: 8px; margin-top: 8px; }
+  .log div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .log .s-error { color: var(--err); }
+  .log .s-done, .log .s-hit, .log .s-written, .log .s-saved { color: var(--ok); }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Global Context Console</h1>
+    <p>PS02 · build a user's context file, talk on voice or chat, and watch the file learn from each conversation</p>
+  </div>
+  <div class="pills">
+    <span class="pill" id="pillUser">No user</span>
+    <span class="pill" id="pillMode">Context: live API</span>
+    <span class="pill" id="pillAgent">Voice agent: off</span>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="side">
+    <section class="card">
+      <h2>User</h2>
+      <label for="glid">GLID</label>
+      <input type="text" id="glid" value="7444262" inputmode="numeric">
+      <label for="demoGlid" id="demoGlidLabel" hidden>Saved demo profiles</label>
+      <select id="demoGlid" hidden aria-label="Saved demo profiles"></select>
+      <div class="seg" id="roleSeg">
+        <button data-role="seller" class="on">Seller</button>
+        <button data-role="buyer">Buyer</button>
+      </div>
+      <div class="chips">
+        <span class="chip" data-glid="7444262" data-role="seller">7444262 · seller</span>
+        <span class="chip" data-glid="271504729" data-role="seller">271504729 · seller</span>
+        <span class="chip" data-glid="271504729" data-role="buyer">271504729 · buyer</span>
+        <span class="chip" data-glid="95568576" data-role="seller">95568576 · seller</span>
+        <span class="chip" data-glid="7195425" data-role="buyer">7195425 · buyer</span>
+        <span class="chip" data-glid="900000000001" data-role="seller">new user</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Context file</h2>
+      <button class="btn primary" id="btnPrepare" style="width:100%">Prepare context</button>
+      <label class="check"><input type="checkbox" id="force"> Rebuild from sources (preserves learned facts)</label>
+    </section>
+
+    <section class="card">
+      <h2>Talk</h2>
+      <div class="stack">
+        <button class="btn voice" id="btnCall">Call</button>
+        <button class="btn chat" id="btnChat">Start chat</button>
+      </div>
+      <p class="hint">Hanging up or ending the chat saves the conversation and updates the context file.</p>
+      <div class="errbox" id="voiceErr"></div>
+    </section>
+
+    <section class="card">
+      <h2>Memory <button class="btn small" id="btnMemReset">Reset</button></h2>
+      <div id="memList"><div class="hint">No saved conversations.</div></div>
+    </section>
+  </aside>
+
+  <main class="main">
+    <section class="card">
+      <details class="collapsible" id="flowPanel">
+      <summary>Flow</summary>
+      <div class="flow-row">
+        <div class="flow-title">Build context</div>
+        <div class="flow" id="flowBuild"></div>
+      </div>
+      <div class="flow-row">
+        <div class="flow-title">Converse and learn</div>
+        <div class="flow" id="flowConverse"></div>
+      </div>
+      </details>
+    </section>
+
+    <section class="card">
+      <details class="history-demo" id="historyDemo">
+        <summary>History API demo <span class="pill">Local simulation</span></summary>
+        <p class="hint">Save a new activity and watch its event update the context file. The next call or chat uses the updated context.</p>
+        <div class="ctx-meta" id="demoUser"></div>
+        <form id="demoForm">
+          <div class="demo-fields">
+            <div><label for="demoType">Activity</label><select id="demoType"><option value="enquiry.created">New enquiry</option><option value="lead.available" id="demoLeadOption">New available lead</option><option value="ticket.opened" id="demoTicketOpenOption">Open ticket</option><option value="ticket.closed" id="demoTicketCloseOption">Close ticket</option></select></div>
+            <div id="demoQuantityField"><label for="demoQuantity">Quantity</label><input id="demoQuantity" type="number" min="0.001" max="1000000000" step="any" value="500" required></div>
+            <div id="demoUnitField"><label for="demoUnit">Unit</label><input id="demoUnit" value="pieces" maxlength="20" required></div>
+            <div id="demoProductField"><label for="demoProduct">Product</label><input id="demoProduct" value="Tamper Proof Courier Bags" maxlength="100" required></div>
+            <div id="demoCityField"><label for="demoCity">City</label><input id="demoCity" value="Kolkata" maxlength="60" required></div>
+            <div id="demoTicketIdField" hidden><label for="demoTicketId">Ticket ID</label><input id="demoTicketId" inputmode="numeric" pattern="[0-9]{1,20}" maxlength="20" disabled></div>
+            <div id="demoIssueField" hidden><label for="demoIssue">Issue</label><input id="demoIssue" maxlength="200" placeholder="Describe the support issue" disabled></div>
+          </div>
+          <button type="submit" class="btn primary" id="btnDemoSave">Save demo activity</button>
+          <button type="button" class="btn" id="btnDemoRetry" hidden>Retry update</button>
+        </form>
+        <div class="flow-row" style="margin-top:14px"><div class="flow" id="flowHistory"></div></div>
+        <div class="demo-result" id="demoResult" role="status" aria-live="polite"></div>
+        <div class="demo-metrics" id="demoMetrics"></div>
+        <details class="demo-details"><summary>Details</summary><pre id="demoDetails">No activity saved yet.</pre></details>
+      </details>
+    </section>
+
+    <div class="split">
+      <section class="card convo">
+        <h2>Conversation</h2>
+        <div class="status" id="status"><span class="dot"></span><span id="statusText">Idle. Click Call or Start chat.</span></div>
+        <div class="timeline" id="timeline"><div class="empty">The transcript of calls and chats appears here.</div></div>
+        <form class="composer" id="composer">
+          <input type="text" id="chatInput" placeholder="Type a message…" autocomplete="off">
+          <button class="btn chat" id="btnSend">Send</button>
+        </form>
+        <audio id="remoteAudio" autoplay></audio>
+      </section>
+
+      <section class="card ctx">
+        <h2>Context file <span id="ctxPath" class="src"></span></h2>
+        <div class="ctx-tools">
+          <span>View file</span>
+          <div class="seg" id="contextRoleSeg" role="group" aria-label="Context file role">
+            <button type="button" data-context-role="buyer" aria-pressed="false">Buyer MD</button>
+            <button type="button" data-context-role="seller" class="on" aria-pressed="true">Seller MD</button>
+          </div>
+        </div>
+        <div class="ctx-meta" id="ctxMeta"></div>
+        <details class="collapsible context-comparison" id="contextComparison">
+        <summary>Changes since</summary>
+        <div class="ctx-tools">
+          <label for="compare">Compare with</label>
+          <select id="compare"><option value="">—</option></select>
+        </div>
+        <div class="changes" id="changes"></div>
+        </details>
+        <div class="ctx-body" id="ctxBody"><div class="empty">Prepare context to see the file the bot reads.</div></div>
+        <div class="legend"><span class="l-learned">learned from a conversation</span><span class="l-fresh">added since selected version</span></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <details class="logwrap"><summary>Event log</summary><div class="log" id="log"></div></details>
+    </section>
+  </main>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const state = { role: 'seller', ctxRole: 'seller', ctxGeneration: 0, chatSid: null, chatGeneration: 0, selectionGeneration: 0, offset: -1, pc: null, mic: null, callStart: null, timer: null, ctx: null };
+const glid = () => $('glid').value.trim();
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// ---------- Flow ----------
+const BUILD = [
+  ['lookup', 'Request', 'GLID + role'],
+  ['sample', 'samples/', 'hand-written'],
+  ['cache', 'contexts/', 'saved file'],
+  ['api', 'Context API', 'userCtx'],
+  ['datasets', 'Datasets', 'CSV history'],
+  ['llm', 'Write file', 'template or LLM'],
+  ['file', 'role.md', 'context file'],
+  ['guide', 'Guide', 'opening + talking points'],
+  ['summary', 'Summaries', 'free text, background'],
+];
+const CONVERSE = [
+  ['prompt', 'Prompt', 'file + memory'],
+  ['channel', 'Channel', 'voice / chat'],
+  ['turn', 'Conversation', 'live turns'],
+  ['memory', 'Memory', 'transcript saved'],
+  ['update', 'Update file', 'learn from it'],
+];
+const HISTORY = [
+  ['demo_history', 'History saved', 'local History API'],
+  ['demo_event', 'Event emitted', 'activity notification'],
+  ['demo_update', 'Context updating', 'structured facts'],
+  ['demo_file', 'File updated', 'next conversation ready'],
+];
+function drawFlow(el, nodes) {
+  el.innerHTML = nodes.map(([id, t, s], i) =>
+    (i ? '<div class="arrow">→</div>' : '') +
+    `<div class="node" id="n-${id}"><div class="n-title">${t}</div><div class="n-sub">${s}</div><div class="n-detail" id="d-${id}"></div></div>`
+  ).join('');
+}
+drawFlow($('flowBuild'), BUILD);
+drawFlow($('flowConverse'), CONVERSE);
+drawFlow($('flowHistory'), HISTORY);
+function setNode(id, cls, detail) {
+  const n = $('n-' + id); if (!n) return;
+  n.className = 'node' + (cls ? ' ' + cls : '');
+  if (detail !== undefined) $('d-' + id).textContent = detail;
+}
+const resetFlow = nodes => nodes.forEach(([id]) => setNode(id, '', ''));
+const skipNodes = ids => ids.forEach(id => setNode(id, 'skip', 'not needed'));
+const ms = v => v == null ? '' : v >= 1000 ? (v / 1000).toFixed(1) + ' s' : v + ' ms';
+let turnCount = 0;
+
+function applyFlow(e) {
+  if (e.step.startsWith('demo_')) { applyDemoEvent(e); return; }
+  switch (e.step) {
+    case 'lookup': resetFlow(BUILD); setNode('lookup', 'done', `${e.glid} · ${e.role}${e.force ? ' · rebuild' : ''}`); break;
+    case 'sample':
+      if (e.status === 'hit') { setNode('sample', 'done', 'found'); skipNodes(['cache', 'api', 'datasets', 'llm', 'summary']); setNode('file', 'done', e.path); refreshContext(); }
+      else setNode('sample', e.status === 'miss' ? 'miss' : 'skip', e.reason || (e.status === 'miss' ? 'not found' : 'skipped'));
+      break;
+    case 'cache':
+      if (e.status === 'hit') {
+        setNode('cache', 'done', e.updated_by_conversations ? `v${e.version} · learned from ${e.updated_by_conversations} conv.` : `fresh · ${e.age_hours} h old`);
+        skipNodes(['api', 'datasets', 'llm', 'summary']); setNode('file', 'done', e.path); refreshContext();
+      } else setNode('cache', e.status === 'skip' ? 'skip' : 'miss', e.status === 'stale' ? `stale · ${e.age_hours} h` : e.status === 'skip' ? 'skipped' : 'not found');
+      break;
+    case 'api':
+      if (e.status === 'start') setNode('api', 'active', 'fetching…');
+      else if (e.status === 'done') setNode('api', 'done', `${e.source_mode === 'demo' ? 'Saved JSON · ' : ''}${ms(e.mapping_ms + e.context_ms)} · ${(e.sections || []).length} sections${e.snapshot_origin === 'datasets' ? ' · dataset-only profile' : ''}`);
+      else setNode('api', 'error', 'unavailable');
+      break;
+    case 'datasets':
+      if (e.status === 'start') setNode('datasets', 'active', 'scanning…');
+      else {
+        const rows = Object.values(e.tables || {}).reduce((a, b) => a + b, 0);
+        setNode('datasets', rows ? 'done' : 'miss', rows ? `${Object.keys(e.tables).length} tables · ${rows} rows` : 'no rows');
+      }
+      break;
+    case 'llm':
+      if (e.status === 'start') setNode('llm', 'active', e.model === 'template' ? 'template…' : `${e.model}…`);
+      else if (e.status === 'done') setNode('llm', 'done', `${e.model === 'template' ? 'template' : 'LLM'} · ${ms(e.ms)} · ${e.words} words`);
+      else if (e.status === 'skip') setNode('llm', 'skip', 'no data');
+      else setNode('llm', 'error', e.error || 'failed');
+      break;
+    case 'file':
+      if (e.status === 'written') setNode('file', 'done', `${e.path}`);
+      else setNode('file', 'miss', 'none: generic opening');
+      refreshContext();
+      break;
+    case 'guide':
+      if (e.status === 'start') setNode('guide', 'active', 'writing…');
+      else if (e.status === 'done') { setNode('guide', 'done', `ready · ${ms(e.ms)}`); refreshContext(); }
+      else if (e.status === 'hit') setNode('guide', 'done', 'already in file');
+      else if (e.status === 'fallback') { setNode('guide', 'miss', `template opening (LLM ${ms(e.ms)})`); refreshContext(); }
+      else setNode('guide', 'error', 'failed');
+      break;
+    case 'summary':
+      if (e.status === 'start') setNode('summary', 'active', `summarising ${e.records} records…`);
+      else if (e.status === 'done') { setNode('summary', 'done', `${e.records} summaries · ${ms(e.ms)} · v${e.version}`); refreshContext(); }
+      else if (e.status === 'cached') setNode('summary', 'done', `all ${e.records} cached`);
+      else if (e.status === 'skip') setNode('summary', 'skip', 'no free text');
+      else setNode('summary', 'error', 'failed: quotes kept');
+      break;
+    case 'prompt':
+      if (e.status === 'waiting') { setNode('prompt', 'active', 'waiting for last update…'); break; }
+      setNode('prompt', 'done', e.cold_start ? `no file · ${e.memory_conversations} past conv.` : `${e.view_words} words + ${e.memory_conversations} past conv.`);
+      break;
+    case 'voice':
+      if (e.status === 'start') setNode('channel', 'active', 'voice: preparing');
+      else if (e.status === 'connected') { resetFlow(CONVERSE.slice(2)); turnCount = 0; setNode('channel', 'done', 'voice call live'); divider('Voice call'); }
+      else if (e.status === 'ended') setNode('channel', '', 'call ended');
+      else if (e.status === 'error') { setNode('channel', 'error', 'call failed'); showErr('Voice call failed:\n' + e.error + '\n\nFull log: memory/voice_agent.log'); }
+      break;
+    case 'chat':
+      if (e.status === 'start') { resetFlow(CONVERSE.slice(1)); turnCount = 0; setNode('channel', 'active', 'chat: starting'); }
+      else if (e.status === 'connected') { setNode('channel', 'done', 'chat live'); divider('Chat'); }
+      else if (e.status === 'ended') setNode('channel', '', 'chat ended');
+      break;
+    case 'turn':
+      turnCount++; setNode('turn', 'active', `${turnCount} turns`);
+      addMsg(e.status, e.text);
+      break;
+    case 'memory':
+      if (e.status === 'saved') { setNode('turn', 'done'); setNode('memory', 'done', `${e.turns} turns saved`); }
+      loadMemory();
+      break;
+    case 'update':
+      if (e.status === 'start') { setNode('update', 'active', 'extracting…'); note('Saved. Updating the context file…'); }
+      else if (e.status === 'done') {
+        setNode('update', 'done', `v${e.version} · +${e.added.length} items · ${ms(e.ms)}`);
+        note(`Context file updated to v${e.version} with ${e.added.length} new items`, 'ok');
+        state.lastAdded = e.added; refreshContext(true);
+      }
+      else if (e.status === 'skip') { setNode('update', 'skip', e.reason); note('Nothing new to add to the context file'); }
+      else { setNode('update', 'error', 'failed'); note('Context update failed: ' + (e.error || '')); }
+      break;
+  }
+}
+
+// ---------- Local History API demo ----------
+const demoKey = () => `${glid()}:${state.role}`;
+let demo = { key: '', eventId: null, pending: false, draft: null };
+function demoBusy(busy) {
+  const wasBusy = demo.pending;
+  demo.pending = busy;
+  $('btnDemoSave').disabled = busy;
+  $('btnDemoSave').textContent = busy ? 'Updating context…' : 'Save demo activity';
+  if (busy || wasBusy) {
+    if (!state.pc) $('btnCall').disabled = busy;
+    if (!state.chatSid) $('btnChat').disabled = busy;
+  }
+}
+function resetDemo() {
+  const wasBusy = demo.pending;
+  demo = { key: demoKey(), eventId: null, pending: false, draft: null };
+  $('demoUser').textContent = `${glid()} · ${state.role}`;
+  $('demoLeadOption').disabled = state.role === 'buyer';
+  $('demoTicketOpenOption').disabled = state.role === 'buyer';
+  $('demoTicketCloseOption').disabled = state.role === 'buyer';
+  if (state.role === 'buyer') $('demoType').value = 'enquiry.created';
+  updateDemoFields();
+  $('demoResult').textContent = ''; $('demoResult').className = 'demo-result';
+  $('demoMetrics').textContent = ''; $('demoDetails').textContent = 'No activity saved yet.';
+  $('btnDemoRetry').hidden = true;
+  resetFlow(HISTORY); demoBusy(false); refreshDemoStatus();
+  if (wasBusy) {
+    if (!state.pc) $('btnCall').disabled = false;
+    if (!state.chatSid) $('btnChat').disabled = false;
+  }
+}
+function updateDemoFields() {
+  const enquiry = $('demoType').value === 'enquiry.created';
+  const ticket = $('demoType').value.startsWith('ticket.');
+  const open = $('demoType').value === 'ticket.opened';
+  for (const [name, visible] of [['Quantity', enquiry], ['Unit', enquiry],
+    ['Product', !ticket], ['City', !ticket], ['TicketId', ticket], ['Issue', open]]) {
+    $('demo' + name + 'Field').hidden = !visible;
+    $('demo' + name).disabled = !visible;
+    $('demo' + name).required = visible;
+  }
+}
+$('demoType').onchange = updateDemoFields;
+function applyDemoEvent(e) {
+  if (demo.eventId && demo.eventId !== e.event_id) return;
+  demo.eventId = e.event_id;
+  if (e.step === 'demo_history') { demoBusy(true); setNode('demo_history', 'done', 'saved'); }
+  if (e.step === 'demo_event') setNode('demo_event', 'done', 'received');
+  if (e.step === 'demo_update') setNode('demo_update', 'active', 'updating…');
+  if (e.step === 'demo_file') refreshDemoStatus();
+}
+async function refreshDemoStatus() {
+  const key = demoKey();
+  const expectedEvent = demo.eventId;
+  try {
+    const result = await fetch(`/api/demo/history/status?glid=${glid()}&role=${state.role}`, {cache:'no-store'}).then(r => { if (!r.ok) throw Error('Status unavailable'); return r.json(); });
+    if (key !== demoKey()) return;
+    if (expectedEvent !== demo.eventId && result.latest?.event_id !== demo.eventId) return;
+    if (demo.draft && result.latest?.event_id !== demo.draft.eventId) return;
+    if (demo.completedId === result.latest?.event_id && result.latest.status !== 'done') return;
+    demoBusy(result.pending);
+    const row = result.latest;
+    if (!row) return;
+    const newlyDone = row.status === 'done' && (demo.completedId !== row.event_id);
+    demo.eventId = row.event_id;
+    const data = JSON.parse(row.payload);
+    $('demoDetails').textContent = JSON.stringify({simulation: true, ...data, status: row.status,
+      saved_at: new Date(row.saved_at * 1000).toISOString(), received_at: row.received_at ? new Date(row.received_at * 1000).toISOString() : null,
+      finished_at: row.finished_at ? new Date(row.finished_at * 1000).toISOString() : null,
+      context_version: row.version, save_to_file_ms: row.save_ms, receipt_to_file_ms: row.processing_ms, error: row.error}, null, 2);
+    setNode('demo_history', 'done', 'saved');
+    setNode('demo_event', 'done', row.received_at ? 'received' : 'emitted');
+    setNode('demo_update', row.status === 'processing' ? 'active' : row.status === 'done' ? 'done' : row.status === 'failed' ? 'error' : '', row.status === 'done' ? 'ready' : row.status === 'processing' ? 'updating…' : row.status === 'failed' ? 'failed' : 'queued');
+    $('demoResult').className = 'demo-result' + (row.status === 'failed' ? ' error' : '');
+    $('btnDemoRetry').hidden = row.status !== 'failed';
+    if (row.status === 'done') {
+      setNode('demo_file', 'done', `v${row.version} · ${ms(row.save_ms)}`);
+      const label = data.activity_type.startsWith('ticket.')
+        ? `Ticket ${data.ticket_id}: ${data.activity_type === 'ticket.opened' ? 'opened' : 'closed'} in local demo`
+        : `${data.product}: ${data.activity_type === 'lead.available' ? 'available lead' : 'enquiry'} added`;
+      $('demoResult').textContent = `${label} · v${row.version} · updated in ${ms(row.save_ms)}.`;
+      const m = result.metrics;
+      $('demoMetrics').textContent = `Save → file: ${ms(row.save_ms)} · Event → file: ${ms(row.processing_ms)} · p50 ${ms(m.p50_ms)} · p95 ${ms(m.p95_ms)} (${m.count} completed)`;
+      demo.completedId = row.event_id;
+      if (newlyDone) {
+        await refreshContext(true);
+        if (key === demoKey() && state.ctxRole === state.role && [...$('compare').options].some(o => o.value === String(row.version - 1))) {
+          $('compare').value = String(row.version - 1); renderContext();
+        }
+      }
+    } else if (row.status === 'failed') {
+      setNode('demo_file', 'error', 'update failed');
+      $('demoResult').textContent = 'History saved, but the context update failed. View details or retry.';
+    } else $('demoResult').textContent = 'History saved. Waiting for the context update…';
+  } catch (e) {
+    if (key === demoKey()) $('demoResult').textContent = 'Unable to check activity status. Retrying…';
+  }
+}
+$('demoForm').onsubmit = async ev => {
+  ev.preventDefault();
+  if (demo.pending) return;
+  const key = demoKey();
+  const fields = {glid: glid(), role: state.role, activity_type: $('demoType').value};
+  if (fields.activity_type.startsWith('ticket.')) {
+    fields.ticket_id = $('demoTicketId').value.trim();
+    if (fields.activity_type === 'ticket.opened') fields.issue = $('demoIssue').value.trim();
+  } else {
+    fields.product = $('demoProduct').value.trim();
+    fields.city = $('demoCity').value.trim();
+  }
+  if (fields.activity_type === 'enquiry.created') {
+    fields.quantity = Number($('demoQuantity').value);
+    fields.unit = $('demoUnit').value.trim();
+  }
+  const signature = JSON.stringify(fields);
+  const eventId = demo.draft && demo.draft.signature === signature ? demo.draft.eventId : crypto.randomUUID();
+  demo.draft = {signature, eventId}; demo.eventId = eventId; demo.completedId = null;
+  resetFlow(HISTORY); demoBusy(true); $('btnDemoRetry').hidden = true;
+  $('demoResult').textContent = 'Saving history activity…';
+  setNode('demo_history', 'active', 'saving…');
+  try {
+    await api('/api/demo/history', {event_id:eventId, ...fields});
+    if (key !== demoKey()) return;
+    demo.draft = null;
+    await refreshDemoStatus();
+  } catch (e) {
+    if (key !== demoKey()) return;
+    demoBusy(false); $('demoResult').className = 'demo-result error';
+    $('demoResult').textContent = `Could not save activity: ${e.message}`;
+    setNode('demo_history', 'error', 'save failed');
+  }
+};
+$('btnDemoRetry').onclick = async () => {
+  const key = demoKey();
+  demoBusy(true);
+  try { await api(`/api/demo/history/${demo.eventId}/retry`, {}); }
+  catch (e) { if (key === demoKey()) { demoBusy(false); $('demoResult').textContent = e.message; } }
+  if (key === demoKey()) refreshDemoStatus();
+};
+setInterval(() => { if (demo.pending || $('historyDemo').open) refreshDemoStatus(); }, 1000);
+
+// ---------- Events ----------
+function logEvent(e) {
+  const { ts, step, status, glid: g, role, text, added, ...rest } = e;
+  const extra = text ? JSON.stringify(text.slice(0, 80)) : Object.keys(rest).length ? JSON.stringify(rest) : '';
+  const div = document.createElement('div');
+  div.className = 's-' + status;
+  div.textContent = `${new Date(ts * 1000).toLocaleTimeString()}  ${step.padEnd(8)} ${status.padEnd(9)} ${g || ''} ${role || ''}  ${extra}`;
+  div.title = div.textContent;
+  $('log').appendChild(div); $('log').scrollTop = $('log').scrollHeight;
+}
+async function poll() {
+  try {
+    const r = await fetch('/api/events?offset=' + state.offset).then(r => r.json());
+    state.offset = r.offset;
+    for (const e of r.events) {
+      logEvent(e);
+      if (!e.glid || (e.glid === glid() && (!e.role || e.role === state.role))) applyFlow(e);
+      else if (e.glid === glid() && e.role === state.ctxRole &&
+        ['file', 'update', 'demo_file', 'summary', 'guide'].includes(e.step) &&
+        ['done', 'written'].includes(e.status)) refreshContext(true, e.role);
+    }
+  } catch (_) {}
+  setTimeout(poll, 600);
+}
+
+// ---------- Conversation ----------
+function clearEmpty() { const em = $('timeline').querySelector('.empty'); if (em) em.remove(); }
+function append(el) { clearEmpty(); $('timeline').appendChild(el); $('timeline').scrollTop = $('timeline').scrollHeight; }
+function addMsg(who, text) { const d = document.createElement('div'); d.className = 'msg ' + (who === 'user' ? 'user' : 'bot'); d.textContent = text; append(d); }
+function divider(label) { const d = document.createElement('div'); d.className = 'divider'; d.textContent = `${label} · ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`; append(d); }
+function note(text, cls) { const d = document.createElement('div'); d.className = 'note' + (cls ? ' ' + cls : ''); d.textContent = text; append(d); }
+function setStatus(kind, text, live) {
+  $('status').className = 'status' + (kind ? ' ' + kind : '') + (live ? ' live' : '');
+  $('statusText').textContent = text;
+}
+function showErr(text) { $('voiceErr').textContent = text; $('voiceErr').classList.add('show'); }
+
+// ---------- Voice call (direct WebRTC to the agent) ----------
+async function agentStatus() { return fetch('/api/voice/status').then(r => r.json()); }
+function setAgentPill(s) {
+  if (!hostedVoiceEnabled) { $('pillAgent').textContent = 'Hosted demo: chat'; return; }
+  if (s.ready) { $('pillAgent').textContent = `Voice agent: ready · ${s.glid}`; $('pillAgent').className = 'pill ok'; }
+  else if (s.running) { $('pillAgent').textContent = 'Voice agent: starting…'; $('pillAgent').className = 'pill active'; }
+  else { $('pillAgent').textContent = 'Voice agent: off'; $('pillAgent').className = 'pill'; }
+}
+async function startCall() {
+  const generation = state.selectionGeneration;
+  const selectedGlid = glid(), selectedRole = state.role;
+  $('voiceErr').classList.remove('show');
+  $('btnCall').disabled = true;
+  setStatus('voice', 'Preparing the voice agent…');
+  try {
+    let s = await agentStatus();
+    if (generation !== state.selectionGeneration) return;
+    if (!(s.running && s.glid === selectedGlid && s.role === selectedRole)) {
+      await api('/api/voice/start', { glid: selectedGlid, role: selectedRole });
+    }
+    for (;;) {
+      s = await agentStatus();
+      if (generation !== state.selectionGeneration) return;
+      setAgentPill(s);
+      if (s.ready && s.glid === selectedGlid && s.role === selectedRole) break;
+      if (s.ready) throw new Error('Voice agent belongs to a different user or role; start the call again.');
+      if (!s.running) { if (s.log_tail) showErr('Voice agent exited:\n' + s.log_tail.join('\n')); throw new Error('voice agent stopped'); }
+      await sleep(700);
+    }
+    setStatus('voice', 'Connecting microphone…');
+    const mic = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+    if (generation !== state.selectionGeneration) { mic.getTracks().forEach(t => t.stop()); return; }
+    const pc = new RTCPeerConnection();
+    pc.addTransceiver(mic.getAudioTracks()[0], { direction: 'sendrecv' });
+    pc.createDataChannel('chat', { ordered: true });
+    pc.ontrack = ev => { if (state.pc === pc) $('remoteAudio').srcObject = ev.streams[0] || new MediaStream([ev.track]); };
+    pc.onconnectionstatechange = () => {
+      if (pc.connectionState === 'connected') onCallLive();
+      if (['failed', 'closed'].includes(pc.connectionState)) endCall();
+    };
+    state.pc = pc; state.mic = mic;
+    await pc.setLocalDescription(await pc.createOffer());
+    await iceGathered(pc);
+    if (generation !== state.selectionGeneration) return;
+    const answer = await fetch(s.offer_url, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),
+    }).then(r => { if (!r.ok) throw new Error('offer rejected: ' + r.status); return r.json(); });
+    if (generation !== state.selectionGeneration) return;
+    await pc.setRemoteDescription({ sdp: answer.sdp, type: answer.type });
+    if (generation !== state.selectionGeneration) return;
+    $('btnCall').textContent = 'Hang up'; $('btnCall').className = 'btn hang'; $('btnCall').disabled = false;
+  } catch (e) {
+    if (generation !== state.selectionGeneration) return;
+    endCall();
+    setStatus('', 'Call failed: ' + e.message);
+    if (e.name === 'NotAllowedError') showErr('Microphone permission was denied. Allow it in the browser and try again.');
+  }
+}
+function iceGathered(pc) {
+  if (pc.iceGatheringState === 'complete') return Promise.resolve();
+  return new Promise(resolve => {
+    const done = () => { if (pc.iceGatheringState === 'complete') resolve(); };
+    pc.addEventListener('icegatheringstatechange', done);
+    setTimeout(resolve, 2000);  // host candidates are enough on localhost
+  });
+}
+function onCallLive() {
+  state.callStart = Date.now();
+  clearInterval(state.timer);
+  state.timer = setInterval(() => {
+    const s = Math.floor((Date.now() - state.callStart) / 1000);
+    setStatus('voice', `On call with ${glid()} · ${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`, true);
+  }, 500);
+}
+function endCall() {
+  clearInterval(state.timer);
+  if (state.pc) { state.pc.onconnectionstatechange = null; state.pc.close(); state.pc = null; }
+  if (state.mic) { state.mic.getTracks().forEach(t => t.stop()); state.mic = null; }
+  $('btnCall').textContent = 'Call'; $('btnCall').className = 'btn voice'; $('btnCall').disabled = false;
+  if (!state.chatSid) setStatus('', 'Idle. Click Call or Start chat.');
+}
+$('btnCall').onclick = () => state.pc ? endCall() : startCall();
+
+// ---------- Chat ----------
+function resetChatUi() {
+  state.chatSid = null;
+  $('composer').classList.remove('show'); $('chatInput').value = '';
+  $('btnChat').textContent = 'Start chat'; $('btnChat').className = 'btn chat';
+  $('btnChat').disabled = false; $('btnSend').disabled = false;
+}
+$('btnChat').onclick = async () => {
+  const generation = ++state.chatGeneration;
+  if (state.chatSid) {  // end chat
+    const sessionId = state.chatSid;
+    resetChatUi();
+    $('btnChat').disabled = true;
+    await api('/api/chat/end', { session_id: sessionId }).catch(() => {});
+    if (generation !== state.chatGeneration) return;
+    $('btnChat').disabled = false;
+    setStatus('', 'Idle. Click Call or Start chat.');
+    return;
+  }
+  $('btnChat').disabled = true; setStatus('chat', 'Starting chat…');
+  try {
+    const r = await api('/api/chat/start', { glid: glid(), role: state.role });
+    if (generation !== state.chatGeneration) {
+      await api('/api/chat/end', { session_id: r.session_id }).catch(() => {});
+      return;
+    }
+    state.chatSid = r.session_id;
+    $('composer').classList.add('show'); $('chatInput').focus();
+    $('btnChat').textContent = 'End chat'; $('btnChat').className = 'btn hang';
+    setStatus('chat', `Chatting with ${glid()} · ${state.role}`, true);
+  } catch (e) { if (generation === state.chatGeneration) setStatus('', 'Chat failed: ' + e.message); }
+  if (generation === state.chatGeneration) $('btnChat').disabled = false;
+};
+$('composer').onsubmit = async ev => {
+  ev.preventDefault();
+  const text = $('chatInput').value.trim(); if (!text || !state.chatSid) return;
+  const generation = state.chatGeneration;
+  $('chatInput').value = ''; $('btnSend').disabled = true;
+  try { await api('/api/chat/message', { session_id: state.chatSid, text }); }  // turns arrive through events
+  catch (e) { if (generation === state.chatGeneration) note('Send failed: ' + e.message); }
+  if (generation !== state.chatGeneration) return;
+  $('btnSend').disabled = false; $('chatInput').focus();
+};
+
+// ---------- Context file ----------
+const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const STAMP = /\[(?:from )?(?:voice|chat) \d{1,2} \w{3} \d{2}:\d{2}\]|^\d{1,2} \w{3} \d{4} \d{2}:\d{2}, (?:voice|chat):/;
+const stripFm = md => md.replace(/^---\n[\s\S]*?\n---\n/, '');
+function inline(s) {
+  return esc(s)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/(\[(?:API|Dataset|Demo history|from voice|from chat|voice|chat)[^\]]*\])/g, '<span class="src">$1</span>');
+}
+function renderMarkdown(md, freshLines) {
+  let fm = '';
+  const m = md.match(/^---\n([\s\S]*?)\n---\n/);
+  if (m) { fm = m[1]; md = md.slice(m[0].length); }
+  let html = fm ? `<details class="fm"><summary>Metadata (not read by the bot)</summary><pre>${esc(fm)}</pre></details>` : '';
+  let inList = false, inGuide = false;
+  for (const line of md.split('\n')) {
+    const li = line.match(/^\s*[-*]\s+(.*)/);
+    if (li) {
+      if (!inList) { html += inGuide ? '<ul class="guide">' : '<ul>'; inList = true; }
+      const cls = freshLines && freshLines.has(line.trim()) ? 'fresh' : STAMP.test(li[1]) ? 'learned' : '';
+      html += `<li class="${cls}">${inline(li[1]).replace(/^(Opening|Talking point \d|Already known[^:]*|Avoid):/, '<strong>$1:</strong>')}</li>`;
+      continue;
+    }
+    if (inList) { html += '</ul>'; inList = false; }
+    if (/^#{2,3}\s/.test(line)) inGuide = /^##\s+Conversation Guide/i.test(line);
+    if (/^#{2,3}\s/.test(line)) html += `<h4>${inline(line.replace(/^#{2,3}\s/, ''))}</h4>`;
+    else if (/^#\s/.test(line)) html += `<h3>${inline(line.replace(/^#\s/, ''))}</h3>`;
+    else if (line.trim()) html += `<p>${inline(line)}</p>`;
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+// Compare facts by section, ignoring source tags and conversation timestamps.
+// Guide rewrites and metadata updates do not count as newly learned facts.
+function changeText(line) {
+  return line.replace(/^[-*]\s+/, '')
+    .replace(/\[(?:API|Dataset|Demo history|from voice|from chat|voice|chat)[^\]]*\]/g, '')
+    .replace(/^\d{1,2} \w{3} \d{4} \d{2}:\d{2}, (?:voice|chat):\s*/, '')
+    .replace(/\s+/g, ' ').trim();
+}
+function contextFacts(md) {
+  const facts = new Map();
+  let section = '';
+  for (const raw of stripFm(md).split('\n')) {
+    if (/^##\s+/.test(raw)) section = raw.replace(/^##\s+/, '').trim();
+    if (!section || section === 'Conversation Guide' || !/^\s*[-*]\s+/.test(raw)) continue;
+    const line = raw.trim(), text = changeText(line);
+    if (!text || /^(Unknown|No data available)\.?$/i.test(text)) continue;
+    const key = section + '\n' + text;
+    if (!facts.has(key)) facts.set(key, { section, text, line });
+  }
+  return facts;
+}
+function contextChanges(beforeMd, nowMd) {
+  const before = contextFacts(beforeMd), now = contextFacts(nowMd);
+  return {
+    added: [...now].filter(([key]) => !before.has(key)).map(([, fact]) => fact),
+    removed: [...before].filter(([key]) => !now.has(key)).map(([, fact]) => fact),
+  };
+}
+function shortChange(text) {
+  text = text.replace(/^\d{1,2} \w{3} \d{4}:\s*/, '')
+    .replace(/^Seller agreed to\s+/i, 'Agreed to ')
+    .replace(/^Seller decided to\s+/i, 'Decided to ')
+    .replace(/^Seller (?:stated|confirmed) (?:that )?/i, '')
+    .replace(/^Callback requested for later(?: \(seller busy now, to call back later\))?\.?$/i, 'Callback requested; time not confirmed.')
+    .replace(/^IndiaMART executive to call seller to fix meeting timing/i, 'Executive to call and confirm meeting time');
+  const words = text.split(/\s+/);
+  return words.length > 14 ? words.slice(0, 14).join(' ') + '…' : text;
+}
+function changeSummary(changes, version) {
+  const { added, removed } = changes;
+  if (!added.length && !removed.length) return '<b>No changes to facts.</b><div class="sec">Only formatting, metadata or the conversation guide may have changed.</div>';
+  const groups = new Map();
+  for (const fact of [...added, ...removed]) {
+    if (!groups.has(fact.section)) groups.set(fact.section, { added: [], removed: [] });
+  }
+  for (const fact of added) groups.get(fact.section).added.push(fact);
+  for (const fact of removed) groups.get(fact.section).removed.push(fact);
+  const priority = ['Pending Actions and Clarifications', 'Cross-Channel Conversations'];
+  const ordered = [...groups].sort(([a], [b]) => {
+    const rank = s => priority.includes(s) ? priority.indexOf(s) : priority.length;
+    return rank(a) - rank(b);
+  });
+  const labels = { 'Pending Actions and Clarifications': 'Next steps', 'Cross-Channel Conversations': 'Latest conversation',
+    'Business Profile and KYC': 'Business profile', 'Profile and KYC': 'Profile', 'Coverage and Uncertainty': 'Data coverage' };
+  // Show individual actions, without repeating the same facts in a conversation summary.
+  const direct = ordered.filter(([section]) => section !== 'Cross-Channel Conversations')
+    .flatMap(([, group]) => group.added);
+  const candidates = direct.length ? direct : added;
+  const seen = new Set();
+  const items = candidates.filter(fact => {
+    const text = shortChange(fact.text);
+    if (seen.has(text)) return false;
+    seen.add(text);
+    return true;
+  }).slice(0, 3);
+  const preview = items.length
+    ? items.map(fact => `<li>${esc(shortChange(fact.text))}</li>`).join('')
+    : '<li>Previous items removed from this view.</li>';
+  const details = [['Added', added], ['Removed from this view', removed]].filter(([, facts]) => facts.length)
+    .map(([label, facts]) => `<b>${label}</b><ul>${facts.map(f => `<li><span class="sec">${esc(labels[f.section] || f.section)}:</span> ${inline(f.text)}</li>`).join('')}</ul>`).join('');
+  return `<b>Latest changes</b><ul>${preview}</ul>` +
+    `<details><summary>View details</summary><div class="sec">Compared with v${esc(String(version))}</div><div class="change-detail">${details}</div></details>`;
+}
+
+function setContextRole(role, refresh = true) {
+  if (!['buyer', 'seller'].includes(role)) return;
+  state.ctxRole = role;
+  ++state.ctxGeneration;
+  state.ctx = null; state.history = [];
+  $('compare').innerHTML = '<option value="">—</option>';
+  $('compare').value = '';
+  document.querySelectorAll('#contextRoleSeg button').forEach(button => {
+    const selected = button.dataset.contextRole === role;
+    button.classList.toggle('on', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  });
+  $('ctxPath').textContent = `${role}.md`;
+  $('ctxMeta').textContent = '';
+  $('changes').classList.remove('show');
+  $('ctxBody').innerHTML = '<div class="empty">Loading context file…</div>';
+  if (refresh) return refreshContext();
+}
+document.querySelectorAll('#contextRoleSeg button').forEach(button => {
+  button.onclick = () => setContextRole(button.dataset.contextRole);
+});
+async function refreshContext(justUpdated, updatedRole = state.role) {
+  const selectedGlid = glid(), role = state.ctxRole;
+  const generation = ++state.ctxGeneration;
+  let r, hist;
+  try {
+    [r, hist] = await Promise.all([
+      fetch(`/api/context?glid=${selectedGlid}&role=${role}`, {cache:'no-store'}).then(r => { if (!r.ok) throw Error('Context unavailable'); return r.json(); }),
+      fetch(`/api/context/history?glid=${selectedGlid}&role=${role}`, {cache:'no-store'}).then(r => { if (!r.ok) throw Error('History unavailable'); return r.json(); }),
+    ]);
+  } catch (_) {
+    if (generation === state.ctxGeneration && selectedGlid === glid() && role === state.ctxRole)
+      $('ctxBody').innerHTML = '<div class="empty">Unable to load this context file. Select the role again to retry.</div>';
+    return;
+  }
+  if (generation !== state.ctxGeneration || selectedGlid !== glid() || role !== state.ctxRole) return;
+  state.ctx = r; state.history = hist;
+  // Version picker: compare the current file with any earlier version.
+  const sel = $('compare'), prev = sel.value;
+  sel.innerHTML = '<option value="">—</option>' + hist.map(h => `<option value="${h.version}">v${h.version}</option>`).join('');
+  if (justUpdated && updatedRole === role && hist.length) sel.value = String(hist[0].version);
+  else if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+  renderContext();
+}
+function renderContext() {
+  const r = state.ctx;
+  if (!r || !r.content) {
+    $('ctxPath').textContent = `${state.ctxRole}.md`; $('ctxMeta').innerHTML = '<span class="pill">no file</span>';
+    $('changes').classList.remove('show');
+    $('ctxBody').innerHTML = `<div class="empty">No ${state.ctxRole} context file for this user yet. A conversation with ${state.ctxRole} activity can create it.</div>`;
+    return;
+  }
+  const label = { updated: ['voice', 'updated by conversations'], history: ['ok', 'updated by demo history'], sample: ['active', 'hand-written sample'], generated: ['ok', 'generated from sources'] }[r.source];
+  const lu = r.last_update;
+  $('ctxPath').textContent = r.path;
+  $('ctxMeta').innerHTML =
+    `<span class="pill ${label[0]}">${label[1]}</span>` +
+    (r.version != null ? `<span class="pill">v${r.version}</span>` : '') +
+    `<span>${stripFm(r.content).split(/\s+/).filter(Boolean).length} words</span>` +
+    (lu ? `<span>· last learned from ${lu.channel} at ${new Date(lu.at.replace(/([+-]\d{2})(\d{2})$/, '$1:$2')).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>` : '');
+
+  const v = $('compare').value;
+  let fresh = null;
+  if (v) {
+    const old = state.history.find(h => String(h.version) === v);
+    if (old) {
+      const changes = contextChanges(old.content, r.content);
+      fresh = $('contextComparison').open ? new Set(changes.added.map(f => f.line)) : null;
+      $('changes').innerHTML = changeSummary(changes, v);
+      $('changes').classList.add('show');
+    } else $('changes').classList.remove('show');
+  } else $('changes').classList.remove('show');
+  $('ctxBody').innerHTML = renderMarkdown(r.content, fresh);
+}
+$('compare').onchange = renderContext;
+$('contextComparison').ontoggle = renderContext;
+
+// ---------- Memory ----------
+async function loadMemory() {
+  const recs = await fetch(`/api/memory?glid=${glid()}&role=${state.role}`).then(r => r.json());
+  if (!recs.length) { $('memList').innerHTML = '<div class="hint">No saved conversations.</div>'; return; }
+  $('memList').innerHTML = '';
+  for (const r of recs.slice().reverse()) {
+    const det = document.createElement('details'); det.className = 'mem-item';
+    det.innerHTML = `<summary>${r.channel === 'voice' ? 'Voice call' : 'Chat'} · ${new Date(r.ended_at * 1000).toLocaleString([], { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })} · ${r.turns.length} turns</summary>`;
+    for (const t of r.turns) { const p = document.createElement('div'); p.className = 't'; p.textContent = (t.speaker === 'user' ? 'User: ' : 'Bot: ') + t.text; det.appendChild(p); }
+    $('memList').appendChild(det);
+  }
+}
+
+// ---------- User selection and actions ----------
+async function api(path, body) {
+  const r = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body || {}) });
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(data.detail || r.statusText);
+  return data;
+}
+function setRole(role) {
+  state.role = role;
+  document.querySelectorAll('#roleSeg button').forEach(b => b.classList.toggle('on', b.dataset.role === role));
+  userChanged();
+}
+function userChanged() {
+  ++state.selectionGeneration;
+  ++state.chatGeneration;
+  const oldSession = state.chatSid;
+  resetChatUi();
+  if (oldSession) api('/api/chat/end', { session_id: oldSession }).catch(() => {});
+  endCall();
+  setStatus('', 'Idle. Click Call or Start chat.');
+  $('pillUser').textContent = `${glid()} · ${state.role}`; $('pillUser').className = 'pill active';
+  $('timeline').innerHTML = '<div class="empty">The transcript of calls and chats appears here.</div>';
+  $('compare').value = '';
+  setContextRole(state.role, false);
+  resetFlow(BUILD); resetFlow(CONVERSE);
+  resetDemo();
+  refreshContext(); loadMemory();
+}
+document.querySelectorAll('#roleSeg button').forEach(b => b.onclick = () => setRole(b.dataset.role));
+document.querySelectorAll('.chip').forEach(c => c.onclick = () => { $('glid').value = c.dataset.glid; setRole(c.dataset.role); });
+$('glid').addEventListener('change', userChanged);
+
+$('btnPrepare').onclick = async () => {
+  if ($('force').checked && !confirm('Refresh from the API and datasets? Learned facts and open follow-ups will be preserved.')) return;
+  $('btnPrepare').disabled = true; $('btnPrepare').textContent = 'Preparing…';
+  try { await api('/api/context/prepare', { glid: glid(), role: state.role, force: $('force').checked }); await refreshContext(); }
+  catch (e) { alert(e.message); }
+  $('btnPrepare').disabled = false; $('btnPrepare').textContent = 'Prepare context';
+};
+$('btnMemReset').onclick = async () => {
+  if (!confirm(`Delete saved ${state.role} conversations for ${glid()}? The context file is not changed.`)) return;
+  await api('/api/memory/reset', { glid: glid(), role: state.role });
+  loadMemory();
+};
+
+let hostedVoiceEnabled = true;
+async function loadRuntime() {
+  try {
+    const runtime = await fetch('/api/runtime').then(r => r.json());
+    hostedVoiceEnabled = runtime.voice_enabled;
+    $('pillMode').textContent = runtime.context_mode === 'demo' ? 'Context: saved JSON demo' : 'Context: live API';
+    if (runtime.context_mode === 'demo') {
+      $('demoGlidLabel').hidden = false;
+      $('demoGlid').hidden = false;
+      const select = $('demoGlid');
+      select.innerHTML = '';
+      const placeholder = document.createElement('option');
+      placeholder.value = ''; placeholder.textContent = 'Select one of the saved GLIDs'; select.appendChild(placeholder);
+      for (const id of runtime.demo_glids) {
+        const option = document.createElement('option');
+        option.value = id; option.textContent = id; select.appendChild(option);
+      }
+      select.onchange = () => { if (select.value) { $('glid').value = select.value; userChanged(); } };
+    }
+    if (!hostedVoiceEnabled) {
+      $('btnCall').textContent = 'Voice: local only';
+      $('btnCall').title = 'This hosted demo supports chat. Browser voice uses the local WebRTC service.';
+      $('btnCall').onclick = () => showErr('Use Start chat on this deployment. Browser voice is available when running locally.');
+      $('pillAgent').textContent = 'Hosted demo: chat';
+    }
+  } catch (e) { console.warn('Runtime configuration unavailable', e); }
+}
+userChanged();
+loadRuntime();
+poll();
+agentStatus().then(setAgentPill);
+setInterval(() => agentStatus().then(setAgentPill).catch(() => {}), 5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "glid": "2614325",
+  "origin": "datasets",
+  "fetched_at": null,
+  "segments": [
+    "kycdetails",
+    "activitydetails",
+    "connectdetails",
+    "ticketsdetails",
+    "BLdetails",
+    "ActualData",
+    "duplicate_glids_details"
+  ],
+  "data": {},
+  "datasets": {
+    "buyer": {},
+    "seller": {
+      "gc_seller_profile.csv": [
+        {
+          "fk_glusr_usr_id": "2614325",
+          "seller_city": "New Delhi",
+          "seller_district": "Delhi",
+          "seller_state": "Delhi",
+          "seller_pincode": "[REDACTED]",
+          "seller_locality": "Chandni Chowk",
+          "business_type": "Proprietorship",
+          "annual_turnover": "40 L - 1.5 Cr",
+          "nature_of_business": "Trader - Wholesaler/Distributor",
+          "nature_of_business_secondary": "Wholesale Business",
+          "gst_registration_year": "2017",
+          "top_category_1": "Bow Shackle",
+          "top_category_2": "Bulldog Clamp",
+          "top_category_3": "Cast Iron Wheels",
+          "top_parent_category": "Shackle",
+          "top_category_group": "Mechanical Components & Parts",
+          "num_categories": "40",
+          "eng_activity_30d": "65.0",
+          "eng_answered_calls_90d": "1",
+          "eng_call_attempts_90d": "8",
+          "eng_call_attempts_1yr": "29",
+          "eng_pickup_ratio_90d": "12.5",
+          "eng_pickup_ratio_1yr": "3.45",
+          "eng_long_calls_90d": "0",
+          "eng_short_calls_90d": "1",
+          "eng_enq_received_90d": "0",
+          "eng_enq_received_1yr": "1",
+          "eng_enq_replies_90d": "1",
+          "eng_enq_replies_1yr": "2",
+          "eng_pns_received_90d": "1",
+          "eng_pns_received_1yr": "3",
+          "eng_pns_answered_90d": "1",
+          "eng_pns_answered_1yr": "3",
+          "eng_product_count": "60",
+          "eng_products_modified_90d": "3.0",
+          "eng_products_modified_1yr": "16.0",
+          "eng_cqs": "12.0",
+          "bot_attempts": "1",
+          "bot_answered": "1",
+          "calls_meeting_fixed": "0",
+          "calls_not_interested": "0",
+          "calls_general": "1",
+          "calls_call_later": "0",
+          "bot_answer_rate": "1.0",
+          "avg_answered_call_sec": "55",
+          "company_name": "Dhenu Tools Co.",
+          "customer_type": "vgFCPplus with PNS",
+          "is_paid": "0",
+          "listing_status": "LST",
+          "mobile_verified_flag": "[REDACTED]",
+          "email_verified_flag": "[REDACTED]",
+          "gst_verified_flag": "1",
+          "gst_flag": "1",
+          "is_pan_number_available": "1",
+          "business_type_flag": "1",
+          "visiting_card_flag": "1"
+        }
+      ],
+      "gc_buyer_calls_received.csv": [
+        {
+          "call_id": "677564365",
+          "call_datetime": "2026-04-16 13:41:52",
+          "end_time": "13:42:14",
+          "duration_sec": "23",
+          "talk_sec": "2",
+          "call_status": "Connected",
+          "buyer_glid": "33893303",
+          "seller_glid": "2614325",
+          "caller_circle": "Gujarat",
+          "caller_operator": "Vodafone E",
+          "mcat_id": "11570",
+          "transfer_flag": "0"
+        }
+      ],
+      "gc_bot_calls.csv": [
+        {
+          "attempt_id": "56889",
+          "fk_glusr_usr_id": "2614325",
+          "redis_bucket": "PAM",
+          "lead_bot_version": "main_vani",
+          "call_attempt_count": "1",
+          "call_start_time": "2026-04-24 14:00:41",
+          "lead_call_duration": "55.0",
+          "lead_call_summary": "The agent from IndiaMART called the lead from Dhenu Tools Company regarding their interest in purchasing a paid package. The agent offered a meeting with a sales executive to help improve their catalog. The lead stated that they have already discussed this and do not require any further assistance.",
+          "disposition_label": "General (talked)",
+          "meeting_fixed": "0",
+          "has_turn_transcript": "0",
+          "has_evaluator_output": "0"
+        }
+      ]
+    }
+  }
+}

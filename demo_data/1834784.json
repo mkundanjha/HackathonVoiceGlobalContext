@@ -1,0 +1,751 @@
+{
+  "schema_version": 1,
+  "glid": "1834784",
+  "origin": "api",
+  "fetched_at": "2026-10-10T14:11:40+0530",
+  "segments": [
+    "kycdetails",
+    "activitydetails",
+    "connectdetails",
+    "ticketsdetails",
+    "BLdetails",
+    "ActualData",
+    "duplicate_glids_details"
+  ],
+  "data": {
+    "ActualData": {
+      "glid": "1834784",
+      "preferred_cities": null,
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.315274442+05:30"
+      }
+    },
+    "BLdetails": {
+      "BL_available_gl_city": 0,
+      "active_bl_details": [],
+      "bl_available_a_rank": 0,
+      "bl_available_a_rank_pref_city": 0,
+      "bl_available_pref_city": 0,
+      "glid": "1834784",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.31527372+05:30"
+      }
+    },
+    "activitydetails": {
+      "BUYER_ACTIVITY": [
+        {
+          "ACTIVITY_ID": "20",
+          "ACTIVITY_TIME": "20261008193457",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "10972",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "Inductive Proximity Switches",
+          "PRODUCT_ID": "14460675173",
+          "SELLER_GLUSR_ID": "3468189"
+        },
+        {
+          "ACTIVITY_ID": "10",
+          "ACTIVITY_TIME": "20261008192957",
+          "ACTIVITY_TYPE": "BL",
+          "CATEGORY_ID": "10972",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "Inductive Proximity Switches",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "4569",
+          "ACTIVITY_TIME": "20261008192949",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "10972",
+          "CATEGORY_NAME": "Inductive Proximity Switches",
+          "KEYWORD": "Inductive Proximity Switches",
+          "PRODUCT_ID": "14460675173",
+          "SELLER_GLUSR_ID": "3468189"
+        },
+        {
+          "ACTIVITY_ID": "548",
+          "ACTIVITY_TIME": "20261008192936",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "10972",
+          "CATEGORY_NAME": "inductive proximity switches",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "660",
+          "ACTIVITY_TIME": "20261008192853",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "190222",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "216627692"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20261008165843",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "84088",
+          "CATEGORY_NAME": "Air Cargo Service",
+          "KEYWORD": "Domestic Air Cargo Export Services",
+          "PRODUCT_ID": "12902965588",
+          "SELLER_GLUSR_ID": "27867636"
+        },
+        {
+          "ACTIVITY_ID": "22",
+          "ACTIVITY_TIME": "20261008165816",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "84088",
+          "CATEGORY_NAME": "Air Cargo Service",
+          "KEYWORD": "Domestic Air Cargo Export Services",
+          "PRODUCT_ID": "12902965588",
+          "SELLER_GLUSR_ID": "27867636"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20261008165816",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "84088",
+          "CATEGORY_NAME": "Air Cargo Service",
+          "KEYWORD": "Domestic Air Cargo Export Services",
+          "PRODUCT_ID": "12902965588",
+          "SELLER_GLUSR_ID": "27867636"
+        },
+        {
+          "ACTIVITY_ID": "575",
+          "ACTIVITY_TIME": "20261008165814",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "84088",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "27867636"
+        },
+        {
+          "ACTIVITY_ID": "575",
+          "ACTIVITY_TIME": "20261008165800",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "84088",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "27867636"
+        },
+        {
+          "ACTIVITY_ID": "660",
+          "ACTIVITY_TIME": "20261007135614",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "184966",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3626322"
+        },
+        {
+          "ACTIVITY_ID": "660",
+          "ACTIVITY_TIME": "20261007132319",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "184966",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3626322"
+        },
+        {
+          "ACTIVITY_ID": "660",
+          "ACTIVITY_TIME": "20261005185028",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "36082",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "619298"
+        },
+        {
+          "ACTIVITY_ID": "677",
+          "ACTIVITY_TIME": "20261005143930",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "105853",
+          "CATEGORY_NAME": "Door",
+          "KEYWORD": "Door",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "677",
+          "ACTIVITY_TIME": "20261005143850",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "37570",
+          "CATEGORY_NAME": "Security Doors",
+          "KEYWORD": "security door",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "677",
+          "ACTIVITY_TIME": "20261005143850",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "37570",
+          "CATEGORY_NAME": "Security Doors",
+          "KEYWORD": "security door",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "677",
+          "ACTIVITY_TIME": "20261005143825",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "12558",
+          "CATEGORY_NAME": "Wooden Door",
+          "KEYWORD": "Wooden Door",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "194",
+          "ACTIVITY_TIME": "20261005143732",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "12558",
+          "CATEGORY_NAME": "wood door",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "194",
+          "ACTIVITY_TIME": "20261005141645",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "105931",
+          "CATEGORY_NAME": "window",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "10",
+          "ACTIVITY_TIME": "20260914152131",
+          "ACTIVITY_TYPE": "BL",
+          "CATEGORY_ID": "653524",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "LRS Mean Well SMPS Power Supply",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "4569",
+          "ACTIVITY_TIME": "20260914152125",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "653524",
+          "CATEGORY_NAME": "MEAN WELL Switch Mode Power Supply",
+          "KEYWORD": "LRS Mean Well  SMPS Power Supply",
+          "PRODUCT_ID": "18250859688",
+          "SELLER_GLUSR_ID": "11213550"
+        },
+        {
+          "ACTIVITY_ID": "4738",
+          "ACTIVITY_TIME": "20260914152100",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "653524",
+          "CATEGORY_NAME": "MEAN WELL Switch Mode Power Supply",
+          "KEYWORD": "Mean Well LRS-100-24 4.5A SMPS",
+          "PRODUCT_ID": "25498381633",
+          "SELLER_GLUSR_ID": "133345853"
+        },
+        {
+          "ACTIVITY_ID": "559",
+          "ACTIVITY_TIME": "20260912152835",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "139194",
+          "CATEGORY_NAME": "Wood Crusher",
+          "KEYWORD": "wood crusher machine",
+          "PRODUCT_ID": "2852002379433",
+          "SELLER_GLUSR_ID": "7659927"
+        },
+        {
+          "ACTIVITY_ID": "660",
+          "ACTIVITY_TIME": "20260912152803",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "41423",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "7659927"
+        }
+      ],
+      "ISQ_DATA": {
+        "ISQ": null
+      },
+      "LAST_ENQUIRY": {
+        "DESCRIPTION": "I am interested in Inductive Proximity Switches",
+        "ENQUIRY_ID": "3188009080",
+        "PRODUCT_NAME": "Enquiry for Inductive Proximity Switches from Ramesh via IndiaMART",
+        "TITLE": "Inductive Proximity Switches"
+      },
+      "LAST_LEAD": {
+        "DATE_R": "2026-10-08 19:31:38.764425",
+        "IMAGE_PATH1": "",
+        "IMAGE_PATH2": "",
+        "IMAGE_PATH3": "",
+        "LEAD_ID": "152727459334",
+        "TITLE": "Inductive Proximity Switches"
+      },
+      "LAST_WA8181_CHAT": [],
+      "LAST_WA9696_CHAT": [],
+      "enq_last_30_days": 16,
+      "enq_last_90_days": 71,
+      "glid": "1834784",
+      "hl_pns_received_30d": 12,
+      "hl_pns_success_30d": 83,
+      "last_3_month": {
+        "bl_active_days": 21,
+        "lms_active_days": "32 D"
+      },
+      "last_4_week": {
+        "a_rank_mcats": 6,
+        "approved_prd": 396,
+        "bl_active_days": 1,
+        "bl_cons": 1,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 100,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 84,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 1,
+        "cons_0_4_hrs_percent": 25,
+        "cons_4_24_hrs": 0,
+        "cons_4_24_hrs_percent": 0,
+        "cons_grter_1day": 0,
+        "cons_grter_1day_percent": 0,
+        "high_sold_mcats": 3,
+        "high_sold_mcats_percent": 1.11,
+        "lms_active_days": "7 D",
+        "location_preference": [
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional"
+        ],
+        "negative_ctg_count": 6,
+        "negative_ctg_with_product_mapped": 6,
+        "notification_clicked": 0,
+        "notification_clicked_percent": 0,
+        "pns_call_picked": 14,
+        "pns_call_received": 17,
+        "prd_without_ctg_mapping": 36,
+        "prd_without_photo": 6,
+        "prd_without_price": 0,
+        "preferred_cities_count": 2,
+        "preferred_state": 6,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_enquiry": 36,
+        "total_hide": 0,
+        "total_mcats": 270,
+        "total_negative_cities": 0,
+        "total_notifications": 0
+      },
+      "last_month": {
+        "a_rank_mcats": 7,
+        "approved_prd": 67,
+        "bl_active_days": 9,
+        "bl_cons": 29,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 100,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 66,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cnt_neg_cities": 1,
+        "cons_0_4_hrs": 11,
+        "cons_0_4_hrs_percent": 34.38,
+        "cons_4_24_hrs": 14,
+        "cons_4_24_hrs_percent": 43.75,
+        "cons_grter_1day": 7,
+        "cons_grter_1day_percent": 21.88,
+        "cq_score": 59,
+        "ctg_without_a_rank": 0,
+        "ctg_without_primary_prd": 0,
+        "enquiry": 11,
+        "high_sold_a_rank": 7,
+        "high_sold_mcats_percent": 15.56,
+        "lms_active_days": "15 D",
+        "location_preference": "Regional",
+        "negative_ctg": 1,
+        "negative_ctg_count": 0,
+        "negative_ctg_product_mapped": 1,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 0,
+        "notification_clicked_percent": 0,
+        "pmcat_count": 0,
+        "prd_without_ctg_mapping": 6,
+        "prd_without_photo": 1,
+        "prd_without_price": 0,
+        "pref_state": 1,
+        "preferred_cities_count": 0,
+        "preferred_city_count": 4,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_hide": 7,
+        "total_mcats": 45,
+        "total_notifications": 0
+      },
+      "last_week": {
+        "bl_active_days": 0,
+        "bl_cons": 0,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 0,
+        "cons_4_24_hrs": 0,
+        "cons_grter_1day": 0,
+        "lms_active_days": "1 D",
+        "total_hide": 0
+      },
+      "pns_received_30_days": 12,
+      "pns_received_90_days": 35,
+      "top3mcat_competitors": [
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Panipat",
+          "competitor_company": "R.Tex (India)",
+          "competitor_glusr_id": 16395384,
+          "competitor_membersince": "Jan 2026",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Mohali",
+          "competitor_company": "Accutex Industries",
+          "competitor_glusr_id": 76230301,
+          "competitor_membersince": "Jan 2023",
+          "custtype_name": "CATALOG",
+          "distance_city": 148.14,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Panipat",
+          "competitor_company": "S.K. Looms & Spares",
+          "competitor_glusr_id": 8134541,
+          "competitor_membersince": "Jul 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Noida",
+          "competitor_company": "Shree Ambey Springs",
+          "competitor_glusr_id": 12838955,
+          "competitor_membersince": "May 2022",
+          "custtype_name": "CATALOG",
+          "distance_city": 103.93,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Panipat",
+          "competitor_company": "Mahaluxmi Traders",
+          "competitor_glusr_id": 1903961,
+          "competitor_membersince": "Jul 2015",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Panipat",
+          "competitor_company": "Vrinda International",
+          "competitor_glusr_id": 31319113,
+          "competitor_membersince": "Aug 2018",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 1834784
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "New Delhi",
+          "competitor_company": "Vinayak Tex Spares",
+          "competitor_glusr_id": 559547,
+          "competitor_membersince": "Feb 2015",
+          "custtype_name": "CATALOG",
+          "distance_city": 89.74,
+          "glusr_usr_id": 1834784
+        }
+      ],
+      "top3mcat_data": [
+        {
+          "hyperlocal_bl": 7,
+          "hyperlocal_paid_sellers": 4,
+          "local_bl": 23,
+          "local_paid_sellers": 7,
+          "mcat_list": "[{\"mcat_name\": \"Jacquard Loom Spare Parts\", \"mcat_id\": \"74128\"},{\"mcat_name\": \"Rapier Loom Parts\", \"mcat_id\": \"74137\"},{\"mcat_name\": \"Weaving Loom Parts\", \"mcat_id\": \"74157\"}]",
+          "total_bl": 152,
+          "total_paid_sellers": 7
+        }
+      ],
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.315274016+05:30"
+      }
+    },
+    "connectdetails": {
+      "app_sharing_counts": 0,
+      "connect_30D": [
+        {
+          "call_answered_date": "2026-10-07 15:06:39",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "104740",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 15:04:46",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "104740",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "connect_7D": [
+        {
+          "call_answered_date": "2026-10-07 15:06:39",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "104740",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 15:04:46",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "104740",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "email_outbound_details": "",
+      "glid": "1834784",
+      "last_call_summary": "",
+      "proposals_sent_counts": 0,
+      "sms_outbound_details": "",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.315273794+05:30"
+      }
+    },
+    "duplicate_glids_details": {
+      "duplicate_glid": null,
+      "duplicate_paid_ids": null,
+      "glid": "1834784",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.315274172+05:30"
+      }
+    },
+    "glid": 1834784,
+    "kycdetails": {
+      "LAST_10SUPPLIER_ACTIVITIES": [],
+      "LAST_TICKETS_CLM_FEEDBACK": [],
+      "SERVICE_VINTAGE": "5 year 11 months and 7 days",
+      "WIP_TICKET_BUCKET": [
+        {
+          "CUSTOMER_TICKET_ID": "10783278",
+          "CUSTOMER_TICKET_ISSUEDATE": "08-Oct-2026",
+          "TYPE": "Service Related"
+        }
+      ],
+      "account_manager_bd": {
+        "did": "",
+        "email": "[REDACTED]",
+        "empid": "990153494",
+        "name": "Shivam"
+      },
+      "account_manager_fsf": {
+        "did": "",
+        "email": "[REDACTED]",
+        "empid": "990153494",
+        "name": "Shivam"
+      },
+      "address": "[REDACTED]",
+      "address_verification_status": false,
+      "approved_product_count": "66",
+      "avg_rating_count": 3.6,
+      "bl_active_dau_30": 0,
+      "catalog_url": "[URL]",
+      "city": "Panipat",
+      "company_name": "Mahaluxmi Textiles Parts",
+      "company_type": "Proprietor",
+      "country": "India",
+      "customer_name": "Ramesh Kumar",
+      "customer_type": "Paid",
+      "customer_vintage": "5Y",
+      "email1": "[REDACTED]",
+      "fcp_flag": 0,
+      "first_name": "Ramesh",
+      "freeshowroom_alias_im": "mahalaxmi-textile-parts",
+      "glid": "1834784",
+      "glusr_customer_type": "CATALOG",
+      "glusr_custtype_id": 2,
+      "glusr_disable_errmsg_value": "",
+      "glusr_disabled_reason": "",
+      "glusr_usr_approv": "A",
+      "glusr_usr_listing_status": "LST",
+      "gst_availability": "",
+      "gst_last_filling": "",
+      "gst_nature_of_business": "Trader - Wholesaler/Distributor",
+      "gst_new": "[GST]",
+      "gst_registration_since": "2017-07-01T00:00:00Z",
+      "gst_status": "Verified",
+      "gst_turnover": "1.5 - 5 Cr",
+      "high_churn": false,
+      "high_risk_suspected": "No",
+      "highest_service": "MDC.",
+      "iec_availibility": "",
+      "iec_status": "",
+      "input_email_verification_status": "[REDACTED]",
+      "input_mobile_verification_status": "[REDACTED]",
+      "is_catalog": "-1",
+      "is_nach_active": "0",
+      "last_3_tickets_disposition": null,
+      "last_call_details": [],
+      "last_name": "Kumar",
+      "nach_deduction_date": "2026-11-05",
+      "nach_status": [
+        {
+          "DIS_TEXT": "Active - End Dt. 05-Nov-2030",
+          "NACH_NEXT_DEDUCTION": "2026-11-05",
+          "S_NAME": "MDC."
+        }
+      ],
+      "nach_stopped_date": "",
+      "payment_invoice_date": "06-Oct-2026",
+      "payment_plan": "Monthly",
+      "payment_receipt_date": "",
+      "payment_receipt_date_new": "05-OCT-2026",
+      "rating_count": 8,
+      "registered_since_with_indiamart": "16 Y 11 M",
+      "renewal_date": "",
+      "renewal_status": "",
+      "stsid": 1743220,
+      "tempblock_status": "",
+      "ticket_count": "1",
+      "top_city_rest_of_india": "",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.31527363+05:30"
+      },
+      "vertical_name": "NSD Emerging Markets - Channel FSF",
+      "workorder_details": [
+        {
+          "SERVICE_ACTIVITY_FLAG_TTS": 2,
+          "WO_COMPLETED_ON": "06-Oct-26",
+          "WO_ID": 13401947,
+          "WO_ISSUEDDATE": "06-Oct-26",
+          "WO_PAID_TYPE": "Paid",
+          "WO_SERVICE_ID": 228,
+          "WO_STATUS": "Completed"
+        },
+        {
+          "SERVICE_ACTIVITY_FLAG_TTS": 2,
+          "WO_COMPLETED_ON": "06-Sep-26",
+          "WO_ID": 13324178,
+          "WO_ISSUEDDATE": "06-Sep-26",
+          "WO_PAID_TYPE": "Paid",
+          "WO_SERVICE_ID": 228,
+          "WO_STATUS": "Completed"
+        }
+      ]
+    },
+    "ticketsdetails": {
+      "BS_TICKETS": null,
+      "WIP_LEGAL_TICKETS": null,
+      "WIP_OPS_TICKETS": null,
+      "bs_conflict_status_since_2020": "",
+      "current": {
+        "tickets": null
+      },
+      "glid": "1834784",
+      "last_7_days": {
+        "board_social_media_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": [
+          {
+            "ticket_history": "\"C2C Process(32789)\" Updated Customer Ticket(10783278) On 08-Oct-2026 05:00:09 AM\r\n\tMail To: [EMAIL]\r\n\tTicket Type changed: \"Sales and Service : Service Related\"\r\n\tComments: Ticket issued with reference to customer call on (2026-10-07 at 15:06:39) to employee (Rohit Yadav - 104740) from Client Mob Number=99*****006, click_to_call_id=771277492. Please connect with customer on priority.\r\n\r\n\"C2C Process(32789)\" Issued Customer Ticket(10783278) On: 08-Oct-2026 05:00:08 AM\r\n\tMail To: [EMAIL]\r\n\tMail Cc: [EMAIL],[EMAIL]\r\n\tStatus : WIP\r\n\tSource Name: Incoming C2C\r\n\tComments: Ticket issued with reference to customer call on (2026-10-07 at 15:06:39) to employee (Rohit Yadav - 104740) from Client Mob Number=99*****006, click_to_call_id=771277492. Please connect with customer on priority.\r\n\r\n",
+            "ticket_id": "10783278",
+            "ticket_issue_date": "08-OCT-26",
+            "ticket_opening_comments": "Ticket issued with reference to customer call on (2026-10-07 at 15:06:39) to employee (Rohit Yadav - 104740) from Client Mob Number=99*****006, click_to_call_id=771277492. Please connect with customer on priority.",
+            "ticket_status": "W",
+            "ticket_type": "Service Related"
+          }
+        ],
+        "total_ticket_count": 1,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "last_8_to_90_days": {
+        "board_social_media_ticket_count": 0,
+        "bs_conflict_status": "No",
+        "dt_ticket_count": 0,
+        "employee_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": null,
+        "total_ticket_count": 0,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:11:40.31527436+05:30"
+      },
+      "wip_tickets": {
+        "ticket_id": "10783278",
+        "ticket_issue_date": "08-OCT-26",
+        "ticket_opening_comments": "Ticket issued with reference to customer call on (2026-10-07 at 15:06:39) to employee (Rohit Yadav - 104740) from Client Mob Number=99*****006, click_to_call_id=771277492. Please connect with customer on priority.",
+        "ticket_status": "W",
+        "ticket_type": "Service Related"
+      }
+    }
+  },
+  "datasets": {
+    "buyer": {},
+    "seller": {}
+  }
+}

@@ -1,0 +1,977 @@
+{
+  "schema_version": 1,
+  "glid": "53203913",
+  "origin": "api",
+  "fetched_at": "2026-10-10T14:51:56+0530",
+  "segments": [
+    "kycdetails",
+    "activitydetails",
+    "connectdetails",
+    "ticketsdetails",
+    "BLdetails",
+    "ActualData",
+    "duplicate_glids_details"
+  ],
+  "data": {
+    "ActualData": {
+      "glid": "53203913",
+      "preferred_cities": [
+        "Bengaluru",
+        "Mysuru",
+        "Hosur",
+        "Hyderabad",
+        "Kolar",
+        "Hubballi",
+        "Kozhikode"
+      ],
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626833+05:30"
+      }
+    },
+    "BLdetails": {
+      "BL_available_gl_city": 0,
+      "active_bl_details": [],
+      "bl_available_a_rank": 0,
+      "bl_available_a_rank_pref_city": 0,
+      "bl_available_pref_city": 0,
+      "glid": "53203913",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626095+05:30"
+      }
+    },
+    "activitydetails": {
+      "BUYER_ACTIVITY": [
+        {
+          "ACTIVITY_ID": "194",
+          "ACTIVITY_TIME": "20261007161558",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "73378",
+          "CATEGORY_NAME": "stone wall cladding",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "194",
+          "ACTIVITY_TIME": "20261007161554",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "73378",
+          "CATEGORY_NAME": "stone wall cladding",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "194",
+          "ACTIVITY_TIME": "20261007161139",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "73378",
+          "CATEGORY_NAME": "stone wall cladding",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "393",
+          "ACTIVITY_TIME": "20261007160813",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "73378",
+          "CATEGORY_NAME": "stone wall cladding",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "527",
+          "ACTIVITY_TIME": "20261007124716",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "658",
+          "ACTIVITY_TIME": "20261006150413",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3743911"
+        },
+        {
+          "ACTIVITY_ID": "658",
+          "ACTIVITY_TIME": "20261006150411",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3743911"
+        },
+        {
+          "ACTIVITY_ID": "658",
+          "ACTIVITY_TIME": "20261006150407",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3743911"
+        },
+        {
+          "ACTIVITY_ID": "527",
+          "ACTIVITY_TIME": "20261006144715",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "71233607"
+        },
+        {
+          "ACTIVITY_ID": "527",
+          "ACTIVITY_TIME": "20261006142355",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "71233607"
+        },
+        {
+          "ACTIVITY_ID": "527",
+          "ACTIVITY_TIME": "20261006135421",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "71233607"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20261002180444",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "1505",
+          "CATEGORY_NAME": "Plastic Components",
+          "KEYWORD": "Plastic Components Die",
+          "PRODUCT_ID": "26537892762",
+          "SELLER_GLUSR_ID": "82114514"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261002180437",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "1505",
+          "CATEGORY_NAME": "Plastic Components",
+          "KEYWORD": "Plastic Components Die",
+          "PRODUCT_ID": "26537892762",
+          "SELLER_GLUSR_ID": "82114514"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20261002180437",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "1505",
+          "CATEGORY_NAME": "Plastic Components",
+          "KEYWORD": "Plastic Components Die",
+          "PRODUCT_ID": "26537892762",
+          "SELLER_GLUSR_ID": "82114514"
+        },
+        {
+          "ACTIVITY_ID": "575",
+          "ACTIVITY_TIME": "20261002180432",
+          "ACTIVITY_TYPE": "Others",
+          "CATEGORY_ID": "1505",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "-",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "82114514"
+        },
+        {
+          "ACTIVITY_ID": "2201",
+          "ACTIVITY_TIME": "20260922235117",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2201",
+          "ACTIVITY_TIME": "20260922235115",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        }
+      ],
+      "ISQ_DATA": {
+        "ISQ": null
+      },
+      "LAST_ENQUIRY": {
+        "DESCRIPTION": "I am interested in Power matic 7kg Demolition hammer machine",
+        "ENQUIRY_ID": "3177933356",
+        "PRODUCT_NAME": "Enquiry for Power matic 7kg Demolition hammer machine from Shankararam via IndiaMART",
+        "TITLE": "Power matic 7kg Demolition hammer machine"
+      },
+      "LAST_LEAD": {
+        "DATE_R": "2026-09-04 18:34:42.547165",
+        "IMAGE_PATH1": "",
+        "IMAGE_PATH2": "",
+        "IMAGE_PATH3": "",
+        "LEAD_ID": "150764570485",
+        "TITLE": "8\" Inch PVC Heat Shrink Film Roll"
+      },
+      "LAST_WA8181_CHAT": [],
+      "LAST_WA9696_CHAT": [],
+      "enq_last_30_days": 384,
+      "enq_last_90_days": 1958,
+      "glid": "53203913",
+      "hl_pns_received_30d": 101,
+      "hl_pns_success_30d": 77,
+      "last_3_month": {
+        "bl_active_days": 41,
+        "lms_active_days": "59 D"
+      },
+      "last_4_week": {
+        "a_rank_mcats": 139,
+        "approved_prd": 1530,
+        "bl_active_days": 29,
+        "bl_cons": 101,
+        "bl_cons_app_percent": 72.09,
+        "bl_cons_desktop_percent": 27.91,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 432,
+        "blni": 6,
+        "blni_loc": 0,
+        "blni_spec": 2,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 65,
+        "cons_0_4_hrs_percent": 11.93,
+        "cons_4_24_hrs": 47,
+        "cons_4_24_hrs_percent": 8.62,
+        "cons_grter_1day": 17,
+        "cons_grter_1day_percent": 3.12,
+        "high_sold_mcats": 74,
+        "high_sold_mcats_percent": 8.79,
+        "lms_active_days": "36 D",
+        "location_preference": [
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional",
+          "Regional"
+        ],
+        "negative_ctg_count": 0,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 73,
+        "notification_clicked_percent": 1.68,
+        "pns_call_picked": 134,
+        "pns_call_received": 165,
+        "prd_without_ctg_mapping": 4,
+        "prd_without_photo": 54,
+        "prd_without_price": 54,
+        "preferred_cities_count": 88,
+        "preferred_state": 24,
+        "premium_ctg_without_a_rank": 50,
+        "premium_ctg_without_primary_prd": 0,
+        "total_enquiry": 4,
+        "total_hide": 3,
+        "total_mcats": 842,
+        "total_negative_cities": 144,
+        "total_notifications": 4351
+      },
+      "last_month": {
+        "a_rank_mcats": 24,
+        "approved_prd": 247,
+        "bl_active_days": 15,
+        "bl_cons": 54,
+        "bl_cons_app_percent": 89.71,
+        "bl_cons_desktop_percent": 10.29,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 353,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cnt_neg_cities": 1,
+        "cons_0_4_hrs": 26,
+        "cons_0_4_hrs_percent": 38.24,
+        "cons_4_24_hrs": 37,
+        "cons_4_24_hrs_percent": 54.41,
+        "cons_grter_1day": 5,
+        "cons_grter_1day_percent": 7.35,
+        "cq_score": 69,
+        "ctg_without_a_rank": 7,
+        "ctg_without_primary_prd": 0,
+        "enquiry": 349,
+        "high_sold_a_rank": 16,
+        "high_sold_mcats_percent": 12.5,
+        "lms_active_days": "20 D",
+        "location_preference": "Regional",
+        "negative_ctg": 0,
+        "negative_ctg_count": 0,
+        "negative_ctg_product_mapped": 0,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 7,
+        "notification_clicked_percent": 0.45,
+        "pmcat_count": 0,
+        "prd_without_ctg_mapping": 8,
+        "prd_without_photo": 0,
+        "prd_without_price": 0,
+        "pref_state": 3,
+        "preferred_cities_count": 0,
+        "preferred_city_count": 9,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_hide": 1,
+        "total_mcats": 128,
+        "total_notifications": 1573
+      },
+      "last_week": {
+        "bl_active_days": 3,
+        "bl_cons": 0,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 0,
+        "cons_4_24_hrs": 0,
+        "cons_grter_1day": 0,
+        "lms_active_days": "4 D",
+        "total_hide": 0
+      },
+      "pns_received_30_days": 101,
+      "pns_received_90_days": 393,
+      "top3mcat_competitors": [
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "G K Udyog",
+          "competitor_glusr_id": 182153871,
+          "competitor_membersince": "Jan 2023",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "U K Pack",
+          "competitor_glusr_id": 94225752,
+          "competitor_membersince": "Jan 2021",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Rishabh Enterprises",
+          "competitor_glusr_id": 53782425,
+          "competitor_membersince": "Mar 2021",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Plus Point Industries",
+          "competitor_glusr_id": 2558184,
+          "competitor_membersince": "Jul 2015",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Sri Sairam Printers",
+          "competitor_glusr_id": 13348816,
+          "competitor_membersince": "Jul 2018",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Mahalakshmi Packaging & Marketing",
+          "competitor_glusr_id": 191152701,
+          "competitor_membersince": "Mar 2025",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "V S Enterprises",
+          "competitor_glusr_id": 76684491,
+          "competitor_membersince": "Nov 2022",
+          "custtype_name": "STAR",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Aar Aar Mittal & Sons",
+          "competitor_glusr_id": 8768187,
+          "competitor_membersince": "Jul 2019",
+          "custtype_name": "STAR",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Basaveshwara Packaging Systems",
+          "competitor_glusr_id": 199760111,
+          "competitor_membersince": "Oct 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Mataji Packaging",
+          "competitor_glusr_id": 117823593,
+          "competitor_membersince": "Oct 2021",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 53203913
+        }
+      ],
+      "top3mcat_data": [
+        {
+          "hyperlocal_bl": 30,
+          "hyperlocal_paid_sellers": 67,
+          "local_bl": 50,
+          "local_paid_sellers": 125,
+          "mcat_list": "[{\"mcat_name\": \"PP Box Strapping Roll\", \"mcat_id\": \"146906\"},{\"mcat_name\": \"Plastic Box\", \"mcat_id\": \"16826\"},{\"mcat_name\": \"Strapping Rolls\", \"mcat_id\": \"113851\"}]",
+          "total_bl": 611,
+          "total_paid_sellers": 125
+        }
+      ],
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626407+05:30"
+      }
+    },
+    "connectdetails": {
+      "app_sharing_counts": 0,
+      "connect_30D": [
+        {
+          "call_answered_date": "2026-10-10 13:57:24",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-09 16:10:02",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-08 16:21:43",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 18:16:18",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "*Meeting Update Format*\r\n                                                   \r\n1. Meeting Agenda: C+2\r\n2. Decision Maker: Primary \r\n3. Major Product/Categories: Shrink film, Air bubble \r\n\r\n4. Meeting Summary & Work Done : Yes\r\n5. ROI/Business Generated in last 6 Months : Yes\r\n6. Work to be Done Post Meeting : Need to correct catalog\r\n7. Comments/Pending work: met with client discussed services catalogue correction done | ",
+          "meet_sucessful_date": "2026-10-07 12:32:21",
+          "met_by": "108538",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 10:45:17",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108538",
+          "call_sts_update": "Appt. Fixed",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "Meeting Agenda: Renewal discussion and service upgrade.\r\nDecision Maker Name & No.: MD – Shankaram | Contact No.: Not provided\r\nMajor Products/Categories: Packaging Materials\r\nMeeting Summary & Work Done: Met with MD Shankaram and discussed the renewal. Successfully migrated the existing Star service to IM Star Pro with 2 categories.\r\nROI/Business Generated in Last 6 Months: Existing service performance and business potential were discussed; exact ROI figures to be updated from account data.\r\nWork to be Done Post Meeting: Complete the upgraded service activation and ensure smooth onboarding for the two categories.\r\nComments/Pending Work: Renewal successfully closed with migration from old Star to IM Star Pro – 2 Categories. Cheque collected. | ",
+          "meet_sucessful_date": "2026-10-06 13:18:35",
+          "met_by": "46978",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-06 13:18:21",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108538",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-29 11:55:42",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108628",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "1. Meeting Agenda: renwal \r\n2. Decision Maker Primary:Shankr\r\n3. Major Product/Categories : stainless steel dustbin\r\n4. Meeting Summary & Work Done : yes\r\n5. ROI/Business Generated in last 6 Months : Yes\r\n6. Work to be Done Post Meeting : Need to consume leads\r\n7. Comments/Pending Disccsued  Reagarding renewal  and clinetvsaid not recived  good benefits  so will see need to push him and need to meet again  tried to convince he said iwll see. | 1. Meeting Agenda: renwal  2. Decision Maker Primary:Shankr 3. Major Product/Categories : stainless steel dustbin 4. Meeting Summary & Work Done : yes 5. ROI/Business Generated in last 6 Months : Yes 6. Work to be Done Post Meeting : Need to consume leads 7. Comments/Pending Disccsued  Reagarding renewal  and clinetvsaid not recived  good benefits  so will see need to push him and need to meet again  tried to convince he said iwll see. | Renewal | 25-Sep-2026",
+          "meet_sucessful_date": "2026-09-25 13:42:40",
+          "met_by": "108628",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-25 11:25:25",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108538",
+          "call_sts_update": "Appt. Fixed",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-11 17:42:35",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "104074",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "connect_7D": [
+        {
+          "call_answered_date": "2026-10-10 13:57:24",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-09 16:10:02",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-08 16:21:43",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 18:16:18",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "107425",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "*Meeting Update Format*\r\n                                                   \r\n1. Meeting Agenda: C+2\r\n2. Decision Maker: Primary \r\n3. Major Product/Categories: Shrink film, Air bubble \r\n\r\n4. Meeting Summary & Work Done : Yes\r\n5. ROI/Business Generated in last 6 Months : Yes\r\n6. Work to be Done Post Meeting : Need to correct catalog\r\n7. Comments/Pending work: met with client discussed services catalogue correction done | ",
+          "meet_sucessful_date": "2026-10-07 12:32:21",
+          "met_by": "108538",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 10:45:17",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108538",
+          "call_sts_update": "Appt. Fixed",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "Meeting Agenda: Renewal discussion and service upgrade.\r\nDecision Maker Name & No.: MD – Shankaram | Contact No.: Not provided\r\nMajor Products/Categories: Packaging Materials\r\nMeeting Summary & Work Done: Met with MD Shankaram and discussed the renewal. Successfully migrated the existing Star service to IM Star Pro with 2 categories.\r\nROI/Business Generated in Last 6 Months: Existing service performance and business potential were discussed; exact ROI figures to be updated from account data.\r\nWork to be Done Post Meeting: Complete the upgraded service activation and ensure smooth onboarding for the two categories.\r\nComments/Pending Work: Renewal successfully closed with migration from old Star to IM Star Pro – 2 Categories. Cheque collected. | ",
+          "meet_sucessful_date": "2026-10-06 13:18:35",
+          "met_by": "46978",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-06 13:18:21",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "108538",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "email_outbound_details": "",
+      "glid": "53203913",
+      "last_call_summary": "",
+      "proposals_sent_counts": 0,
+      "sms_outbound_details": "",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626177+05:30"
+      }
+    },
+    "duplicate_glids_details": {
+      "duplicate_glid": null,
+      "duplicate_paid_ids": null,
+      "glid": "53203913",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626571+05:30"
+      }
+    },
+    "glid": 53203913,
+    "kycdetails": {
+      "LAST_10SUPPLIER_ACTIVITIES": [],
+      "LAST_TICKETS_CLM_FEEDBACK": [
+        {
+          "ACTION_TAKEN": "Irrelevant Buy lead",
+          "CATAGEORY": "BL Feedback",
+          "CUSTOMER_TICKET_CLOSEDATE": "22-Jul-2026",
+          "CUSTOMER_TICKET_ID": "10558736",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "CLOSING RCA\nWhat was the actual issue of client understood on call?- Related to buy leads relevancy\nResolution -Had a word with the client and discussed that they had marked many Buy Leads as Not Relevant.The client said they marked them because they found them irrelevant. I informed the client about the Buy Lead Preferences option and explained how it can help them receive more relevant enquiries. The client understood and agreed. The client also informed that Mr. Sunil will visit within the next 1–2 days. closure  taken. CLM asked.\nC-SAT response expected – Yes\nTicket closure permission taken – Yes\n360 checklist was applicable here -yes \nIMA-\nPNS-\nLMS-\nRatings & Reviews – Discussion Done\nDIR IM Listing -A Rank & D rank checked & corrected",
+          "REASON": "BL - Irrelevant Product"
+        },
+        {
+          "ACTION_TAKEN": "Seller Tool",
+          "CATAGEORY": "Seller Panel related",
+          "CUSTOMER_TICKET_CLOSEDATE": "12-Dec-2025",
+          "CUSTOMER_TICKET_ID": "9775453",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "Closure RCA:\nWhat was the actual issue of client understood on call?                   -  wants to know how to integrate social media accounts\nWhat resolution was shared based on the concern shared by client  -   Guided and informed to stay active on portal closure taken\nShare reasons of each NO in Pre Call RCA                                      -  N/A                         \nBL and Query Discussion                                                              -  Done\nRecent BL & Queries discussed (Y/N) (for relevancy)                       - Done\nFeedback taken on the last 3 BL purchased by client (Y/N)              - Yes\nFresh BL?s shared with client                                                        - Yes\nTicket Closure: yes\nConfirmed if the customer had any other concern?                         - Yes\"\nEmail Sent to Client\nNotification Sent to Client",
+          "REASON": "Seller/ Buyer Panel Guided"
+        },
+        {
+          "ACTION_TAKEN": "Less Buy Lead",
+          "CATAGEORY": "Buylead & Enquiries",
+          "CUSTOMER_TICKET_CLOSEDATE": "23-May-2025",
+          "CUSTOMER_TICKET_ID": "9030375",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "Closure RCA:\nWhat was the actual issue of client understood on call?                   -  less leads \nWhat resolution was shared based on the concern shared by client  -  discuss with client regarding leads overall footfall he said okay other category leads are coming a single category stretch film are not coming so i discuss to change category he said no also ask to work on catelog he said i will work myself closure taken\nShare reasons of each NO in Pre Call RCA                                      -  N/A                         \nBL and Query Discussion                                                              -  Done\nRecent BL and Queries discussed (Y/N) (for relevancy)                       - Done\nFeedback taken on the last 3 BL purchased by client (Y/N)              - Yes\nFresh BL?s shared with client                                                        - Yes\nTicket Closure: yes\nConfirmed if the customer had any other concern?                         - Yes\" \nEmail Sent to Client\nNotification Sent to Client\n",
+          "REASON": "Less BL-Foreign Leads"
+        },
+        {
+          "ACTION_TAKEN": "Less Buy Lead",
+          "CATAGEORY": "Buylead & Enquiries",
+          "CUSTOMER_TICKET_CLOSEDATE": "23-May-2025",
+          "CUSTOMER_TICKET_ID": "9026320",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "Closure RCA:\nWhat was the actual issue of client understood on call?                   -  less leads \nWhat resolution was shared based on the concern shared by client  -  discuss with client regarding leads overall footfall he said okay other category leads are coming a single category stretch film are not coming so i discuss to change category he said no also ask to work on catelog he said i will work myself closure taken\nShare reasons of each NO in Pre Call RCA                                      -  N/A                         \nBL and Query Discussion                                                              -  Done\nRecent BL & Queries discussed (Y/N) (for relevancy)                       - Done\nFeedback taken on the last 3 BL purchased by client (Y/N)              - Yes\nFresh BL?s shared with client                                                        - Yes\nTicket Closure: yes\nConfirmed if the customer had any other concern?                         - Yes\" ",
+          "REASON": "Less BL-Foreign Leads"
+        },
+        {
+          "ACTION_TAKEN": "No Action Taken",
+          "CATAGEORY": "Service Related",
+          "CUSTOMER_TICKET_CLOSEDATE": "04-Apr-2025",
+          "CUSTOMER_TICKET_ID": "8872195",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "\"Closure RCA:\nWhat was the actual issue of client understood on call?                   - stretch film leads not received\nWhat resolution was shared based on the concern shared by client  -  so we create that category and add primary mapping and ask obsereve it then will connect again closure taken\nShare reasons of each NO in Pre Call RCA                                      -  N/A                         \nBL and Query Discussion                                                              -  Done\nRecent BL & Queries discussed (Y/N) (for relevancy)                       - Done\nFeedback taken on the last 3 BL purchased by client (Y/N)              - Yes\nFresh BL?s shared with client                                                        - Yes\nTicket Closure: yes\nConfirmed if the customer had any other concern?                         - Yes\"",
+          "REASON": "No Action Taken-Client Not Responding"
+        }
+      ],
+      "SERVICE_VINTAGE": "3 year 9 months and 22 days",
+      "WIP_TICKET_BUCKET": [],
+      "account_manager_bd": {
+        "did": "07947160940",
+        "email": "[REDACTED]",
+        "empid": "119239",
+        "name": "Shweta Singh"
+      },
+      "account_manager_fsf": {
+        "did": "07947160634",
+        "email": "[REDACTED]",
+        "empid": "108538",
+        "name": "Sunil MR"
+      },
+      "address": "[REDACTED]",
+      "address_verification_status": true,
+      "approved_product_count": "169",
+      "avg_rating_count": 3.2,
+      "bl_active_dau_30": 16,
+      "catalog_url": "[URL]",
+      "city": "Bengaluru",
+      "company_name": "Mahalakshmi Packaging",
+      "company_type": "Proprietor",
+      "country": "India",
+      "customer_name": "Shankararam",
+      "customer_type": "Paid",
+      "customer_vintage": "6Y",
+      "email1": "[REDACTED]",
+      "fcp_flag": 0,
+      "first_name": "Shankararam",
+      "freeshowroom_alias_im": "mahalakshmipackagingbengaluru",
+      "glid": "53203913",
+      "glusr_customer_type": "STAR",
+      "glusr_custtype_id": 12,
+      "glusr_disable_errmsg_value": "",
+      "glusr_disabled_reason": "",
+      "glusr_usr_approv": "A",
+      "glusr_usr_listing_status": "LST",
+      "gst_availability": "",
+      "gst_last_filling": "",
+      "gst_nature_of_business": "Trader - Wholesaler/Distributor",
+      "gst_new": "[GST]",
+      "gst_registration_since": "2017-12-29T00:00:00Z",
+      "gst_status": "Verified",
+      "gst_turnover": "5 - 25 Cr",
+      "high_churn": false,
+      "high_risk_suspected": "No",
+      "highest_service": "Star",
+      "iec_availibility": "",
+      "iec_status": "",
+      "input_email_verification_status": "[REDACTED]",
+      "input_mobile_verification_status": "[REDACTED]",
+      "is_catalog": "-1",
+      "is_nach_active": "1",
+      "last_3_tickets_disposition": null,
+      "last_call_details": [],
+      "last_name": "",
+      "nach_deduction_date": "0",
+      "nach_status": [
+        {
+          "DIS_TEXT": "Stopped - Deal Converted",
+          "NACH_NEXT_DEDUCTION": "0",
+          "S_NAME": "MDC."
+        }
+      ],
+      "nach_stopped_date": "25-01-2021 23:47:59 +0000",
+      "payment_invoice_date": "08-May-2026",
+      "payment_plan": "Annual",
+      "payment_receipt_date": "06-Oct-26",
+      "payment_receipt_date_new": "07-MAY-2026",
+      "rating_count": 79,
+      "registered_since_with_indiamart": "8 Y 9 M",
+      "renewal_date": "",
+      "renewal_status": "",
+      "stsid": 15703242,
+      "tempblock_status": "",
+      "ticket_count": "0",
+      "top_city_rest_of_india": "Kozhikode, Hosur, Mysuru, Hyderabad, Hubballi, Bengaluru, Kolar",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626013+05:30"
+      },
+      "vertical_name": "KCD",
+      "workorder_details": [
+        {
+          "SERVICE_ACTIVITY_FLAG_TTS": 1,
+          "WO_COMPLETED_ON": "",
+          "WO_ID": 13406034,
+          "WO_ISSUEDDATE": "06-Oct-26",
+          "WO_PAID_TYPE": "Free",
+          "WO_SERVICE_ID": 377,
+          "WO_STATUS": "W-I-P"
+        },
+        {
+          "SERVICE_ACTIVITY_FLAG_TTS": 1,
+          "WO_COMPLETED_ON": "",
+          "WO_ID": 13406033,
+          "WO_ISSUEDDATE": "06-Oct-26",
+          "WO_PAID_TYPE": "Free",
+          "WO_SERVICE_ID": 377,
+          "WO_STATUS": "W-I-P"
+        }
+      ]
+    },
+    "ticketsdetails": {
+      "BS_TICKETS": null,
+      "WIP_LEGAL_TICKETS": null,
+      "WIP_OPS_TICKETS": null,
+      "bs_conflict_status_since_2020": "",
+      "current": {
+        "tickets": null
+      },
+      "glid": "53203913",
+      "last_7_days": {
+        "board_social_media_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": null,
+        "total_ticket_count": 0,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "last_8_to_90_days": {
+        "board_social_media_ticket_count": 0,
+        "bs_conflict_status": "No",
+        "dt_ticket_count": 0,
+        "employee_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": [
+          {
+            "ticket_history": "\"Km Kanupriya(118101)\" Updated Customer Ticket(10558736) On 22-Jul-2026 17:56:50 PM\nMail To: [EMAIL]\nMail Cc: [EMAIL]\nStatus changed from \"W-I-P\" to \"Completed\"\n============== Reason code==============\nCategory: BL Feedback\tAction Taken: Irrelevant Buy lead\tReason: BL - Irrelevant Product\n====================================\nComments : CLOSING RCA\nWhat was the actual issue of client understood on call?- Related to buy leads relevancy\nResolution -Had a word with the client and discussed that they had marked many Buy Leads as Not Relevant.The client said they marked them because they found them irrelevant. I informed the client about the Buy Lead Preferences option and explained how it can help them receive more relevant enquiries. The client understood and agreed. The client also informed that Mr. Sunil will visit within the next 1–2 days. closure  taken. CLM asked.\nC-SAT response expected – Yes\nTicket closure permission taken – Yes\n360 checklist was applicable here -yes \nIMA-\nPNS-\nLMS-\nRatings & Reviews – Discussion Done\nDIR IM Listing -A Rank & D rank checked & corrected\nEmail Sent to Client\nNotification Sent to Client\n\n\n\"Km Kanupriya(118101)\" Updated Customer Ticket(10558736) on Jul 22, 2026, 10:25:49 AM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Client did not pick call\n \n\n\"Km Kanupriya(118101)\" Updated Customer Ticket(10558736) on Jul 21, 2026, 05:30:27 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Client did not pick call\n \n\n\"Km Kanupriya(118101)\" Updated Customer Ticket(10558736) on Jul 21, 2026, 12:57:48 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Client asked to call back later \n\n\"Km Kanupriya(118101)\" Updated Customer Ticket(10558736) on Jul 21, 2026, 10:29:40 AM\n   WIP status changed from Untouched to Customer Response Pending \n   Comments: Client did not pick call \n\n\"WebERP AutoProcess(32789)\" Updated Customer Ticket(10558736) On 21-Jul-2026 08:21:14 AM\r\n\tMail To: [EMAIL],[EMAIL]\r\n\tTicket Type changed: \"Sales and Service : BL Feedback\"\r\n\tComments: Wrong Location Count : 9\r\n\r\nDetails at below URL : \r\n[URL]\r\n\r\n\"WebERP AutoProcess(32789)\" Issued Customer Ticket(10558736) On: 21-Jul-2026 08:21:14 AM\r\n\tMail To: [EMAIL],[EMAIL]\r\n\tMail Cc: [EMAIL],[EMAIL]\r\n\tStatus : WIP\r\n\tSource Name: My External\r\n\tComments: Wrong Location Count : 9\r\n\r\nDetails at below URL : \r\n[URL]\r\n\r\n",
+            "ticket_id": "10558736",
+            "ticket_issue_date": "21-JUL-26",
+            "ticket_opening_comments": "Wrong Location Count : 9\r\n\r\nDetails at below URL : \r\n[URL]",
+            "ticket_status": "C",
+            "ticket_type": "BL Feedback"
+          }
+        ],
+        "total_ticket_count": 1,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T14:46:17.410626751+05:30"
+      },
+      "wip_tickets": {
+        "ticket_id": "",
+        "ticket_issue_date": "",
+        "ticket_opening_comments": "",
+        "ticket_status": "",
+        "ticket_type": ""
+      }
+    }
+  },
+  "datasets": {
+    "buyer": {},
+    "seller": {}
+  }
+}

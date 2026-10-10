@@ -1,0 +1,1722 @@
+{
+  "schema_version": 1,
+  "glid": "271504729",
+  "origin": "api",
+  "fetched_at": "2026-10-10T18:55:56+0530",
+  "segments": [
+    "kycdetails",
+    "activitydetails",
+    "connectdetails",
+    "ticketsdetails",
+    "BLdetails",
+    "ActualData",
+    "duplicate_glids_details"
+  ],
+  "data": {
+    "ActualData": {
+      "glid": "271504729",
+      "preferred_cities": null,
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106997+05:30"
+      }
+    },
+    "BLdetails": {
+      "BL_available_gl_city": 0,
+      "active_bl_details": [],
+      "bl_available_a_rank": 0,
+      "bl_available_a_rank_pref_city": 0,
+      "bl_available_pref_city": 0,
+      "glid": "271504729",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106545+05:30"
+      }
+    },
+    "activitydetails": {
+      "BUYER_ACTIVITY": [
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261006183108",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "11878",
+          "CATEGORY_NAME": "Garbage and Waste Bags",
+          "KEYWORD": "Garbage and Waste Bags",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "110688461"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261005164231",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "106039633"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20261005164231",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "11878",
+          "CATEGORY_NAME": "Garbage and Waste Bags",
+          "KEYWORD": "Black Garbage Bag",
+          "PRODUCT_ID": "2859537185955",
+          "SELLER_GLUSR_ID": "271504729"
+        },
+        {
+          "ACTIVITY_ID": "20",
+          "ACTIVITY_TIME": "20260924134339",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "Natural Ld Reprocessed Granules",
+          "PRODUCT_ID": "2851081626797",
+          "SELLER_GLUSR_ID": "189079490"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924134150",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "149839527"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260924134150",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "10",
+          "ACTIVITY_TIME": "20260924133839",
+          "ACTIVITY_TYPE": "BL",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "Natural LD Reprocessed Granules",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "4569",
+          "ACTIVITY_TIME": "20260924133833",
+          "ACTIVITY_TYPE": "Browse",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "Reprocessed LD Granules",
+          "KEYWORD": "Natural Ld Reprocessed Granules",
+          "PRODUCT_ID": "2851081626797",
+          "SELLER_GLUSR_ID": "189079490"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20260924133821",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "Reprocessed LD Granules",
+          "KEYWORD": "Natural Ld Reprocessed Granules",
+          "PRODUCT_ID": "2851081626797",
+          "SELLER_GLUSR_ID": "189079490"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924133734",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "Reprocessed LD Granules",
+          "KEYWORD": "White Natural Ld Reprocessed Granules, For Plastic Industry, Packaging Type: Loose",
+          "PRODUCT_ID": "2851081626797",
+          "SELLER_GLUSR_ID": "189079490"
+        },
+        {
+          "ACTIVITY_ID": "2307",
+          "ACTIVITY_TIME": "20260924133734",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "186213",
+          "CATEGORY_NAME": "Reprocessed LD Granules",
+          "KEYWORD": "Natural Ld Reprocessed Granules",
+          "PRODUCT_ID": "2851081626797",
+          "SELLER_GLUSR_ID": "189079490"
+        },
+        {
+          "ACTIVITY_ID": "2204",
+          "ACTIVITY_TIME": "20260924133655",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "154720",
+          "CATEGORY_NAME": "Natural LD Plastic Granules",
+          "KEYWORD": "Requirement Of LD/LLD White Natural NV Granules",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2204",
+          "ACTIVITY_TIME": "20260924133654",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2204",
+          "ACTIVITY_TIME": "20260924133526",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2204",
+          "ACTIVITY_TIME": "20260924133518",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2379",
+          "ACTIVITY_TIME": "20260924133517",
+          "ACTIVITY_TYPE": "Search",
+          "CATEGORY_ID": "154720",
+          "CATEGORY_NAME": "Natural LD Plastic Granules",
+          "KEYWORD": "Requirement of LD/LLD white natural NV granules",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924133140",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "23711889"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260924133140",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "11878",
+          "CATEGORY_NAME": "Garbage and Waste Bags",
+          "KEYWORD": "Black Garbage Bag",
+          "PRODUCT_ID": "2859537185955",
+          "SELLER_GLUSR_ID": "271504729"
+        }
+      ],
+      "ISQ_DATA": {
+        "ISQ": null
+      },
+      "LAST_ENQUIRY": {
+        "DESCRIPTION": "I am interested in Natural Ld Reprocessed Granules",
+        "ENQUIRY_ID": "3182912483",
+        "PRODUCT_NAME": "Enquiry for Natural Ld Reprocessed Granules from Raghav via IndiaMART",
+        "TITLE": "Natural Ld Reprocessed Granules"
+      },
+      "LAST_LEAD": {
+        "DATE_R": "2026-09-24 13:39:45.971900",
+        "IMAGE_PATH1": "",
+        "IMAGE_PATH2": "",
+        "IMAGE_PATH3": "",
+        "LEAD_ID": "151884472275",
+        "TITLE": "Natural LD Reprocessed Granules"
+      },
+      "LAST_WA8181_CHAT": [],
+      "LAST_WA9696_CHAT": [],
+      "enq_last_30_days": 7,
+      "enq_last_90_days": 29,
+      "glid": "271504729",
+      "hl_pns_received_30d": 3,
+      "hl_pns_success_30d": 100,
+      "last_3_month": {
+        "bl_active_days": 0,
+        "lms_active_days": "0 D"
+      },
+      "last_4_week": {
+        "a_rank_mcats": 1,
+        "approved_prd": 54,
+        "bl_active_days": 0,
+        "bl_cons": 0,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 0,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 84,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 0,
+        "cons_0_4_hrs_percent": 0,
+        "cons_4_24_hrs": 0,
+        "cons_4_24_hrs_percent": 0,
+        "cons_grter_1day": 0,
+        "cons_grter_1day_percent": 0,
+        "high_sold_mcats": 0,
+        "high_sold_mcats_percent": 0,
+        "lms_active_days": "1 D",
+        "location_preference": [
+          "Local",
+          "Local",
+          "Local",
+          "Local",
+          "Local",
+          "Local"
+        ],
+        "negative_ctg_count": 0,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 1,
+        "notification_clicked_percent": 0.58,
+        "pns_call_picked": 1,
+        "pns_call_received": 2,
+        "prd_without_ctg_mapping": 0,
+        "prd_without_photo": 6,
+        "prd_without_price": 54,
+        "preferred_cities_count": 0,
+        "preferred_state": 0,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_enquiry": 0,
+        "total_hide": 0,
+        "total_mcats": 48,
+        "total_negative_cities": 0,
+        "total_notifications": 171
+      },
+      "last_month": {
+        "a_rank_mcats": 0,
+        "approved_prd": 0,
+        "bl_active_days": 0,
+        "bl_cons": 0,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 0,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 0,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cnt_neg_cities": 0,
+        "cons_0_4_hrs": 0,
+        "cons_0_4_hrs_percent": 0,
+        "cons_4_24_hrs": 0,
+        "cons_4_24_hrs_percent": 0,
+        "cons_grter_1day": 0,
+        "cons_grter_1day_percent": 0,
+        "cq_score": 0,
+        "ctg_without_a_rank": 0,
+        "ctg_without_primary_prd": 0,
+        "enquiry": 0,
+        "high_sold_a_rank": 0,
+        "high_sold_mcats_percent": 0,
+        "lms_active_days": "",
+        "location_preference": "",
+        "negative_ctg": 0,
+        "negative_ctg_count": 0,
+        "negative_ctg_product_mapped": 0,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 0,
+        "notification_clicked_percent": 0,
+        "pmcat_count": 0,
+        "prd_without_ctg_mapping": 0,
+        "prd_without_photo": 0,
+        "prd_without_price": 0,
+        "pref_state": 0,
+        "preferred_cities_count": 0,
+        "preferred_city_count": 0,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_hide": 0,
+        "total_mcats": 0,
+        "total_notifications": 0
+      },
+      "last_week": {
+        "bl_active_days": 0,
+        "bl_cons": 0,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 0,
+        "cons_4_24_hrs": 0,
+        "cons_grter_1day": 0,
+        "lms_active_days": "0 D",
+        "total_hide": 0
+      },
+      "pns_received_30_days": 3,
+      "pns_received_90_days": 9,
+      "top3mcat_competitors": [
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Sharad Agro Engineers",
+          "competitor_glusr_id": 14168006,
+          "competitor_membersince": "Mar 2015",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Patidar Bags",
+          "competitor_glusr_id": 9913656,
+          "competitor_membersince": "Mar 2017",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Fortune Traders",
+          "competitor_glusr_id": 131574696,
+          "competitor_membersince": "Dec 2022",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Kartar Enterprises",
+          "competitor_glusr_id": 190674083,
+          "competitor_membersince": "Sep 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Xpression Graphics",
+          "competitor_glusr_id": 20627100,
+          "competitor_membersince": "Sep 2024",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Himanshu Enterprises",
+          "competitor_glusr_id": 2341605,
+          "competitor_membersince": "Jan 2016",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Eco Panni",
+          "competitor_glusr_id": 202518755,
+          "competitor_membersince": "Nov 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Classic Enterprise",
+          "competitor_glusr_id": 84289902,
+          "competitor_membersince": "Dec 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Mittal Traders",
+          "competitor_glusr_id": 3013411,
+          "competitor_membersince": "Jul 2015",
+          "custtype_name": "STAR",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Indore",
+          "competitor_company": "Manan Enterprises",
+          "competitor_glusr_id": 27375514,
+          "competitor_membersince": "Sep 2018",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 271504729
+        }
+      ],
+      "top3mcat_data": [
+        {
+          "hyperlocal_bl": 19,
+          "hyperlocal_paid_sellers": 20,
+          "local_bl": 54,
+          "local_paid_sellers": 39,
+          "mcat_list": "[{\"mcat_name\": \"Garbage and Waste Bags\", \"mcat_id\": \"11878\"},{\"mcat_name\": \"Non Woven W Cut Bags\", \"mcat_id\": \"159243\"},{\"mcat_name\": \"Nursery Bags\", \"mcat_id\": \"139617\"}]",
+          "total_bl": 1226,
+          "total_paid_sellers": 39
+        }
+      ],
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106751+05:30"
+      }
+    },
+    "connectdetails": {
+      "app_sharing_counts": 0,
+      "connect_30D": [
+        {
+          "call_answered_date": "2026-09-11 17:29:45",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "115119",
+          "call_sts_update": "Client did not pick call",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-11 17:29:03",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "115119",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "connect_7D": [],
+      "email_outbound_details": "",
+      "glid": "271504729",
+      "last_call_summary": "",
+      "proposals_sent_counts": 0,
+      "sms_outbound_details": "",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106619+05:30"
+      }
+    },
+    "duplicate_glids_details": {
+      "duplicate_glid": [
+        56532908
+      ],
+      "duplicate_paid_ids": null,
+      "glid": "271504729",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106824+05:30"
+      }
+    },
+    "glid": 271504729,
+    "kycdetails": {
+      "LAST_10SUPPLIER_ACTIVITIES": [],
+      "LAST_TICKETS_CLM_FEEDBACK": [
+        {
+          "ACTION_TAKEN": "Add/Edit/Delete Products",
+          "CATAGEORY": "Catalog/website related",
+          "CUSTOMER_TICKET_CLOSEDATE": "23-Jul-2026",
+          "CUSTOMER_TICKET_ID": "10551939",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "Closing RCA: Added \n\nCalled to client on prim no nr . \nOn Sec no -Father picked the call -said he used to be busy , once free will connect . \ninformed him as per the product received we have updated the same  -said ok\n\nClosing RCA: Added \n\nCalled to client on prim no nr . \nOn Sec no -Father picked the call -said he used to be busy , once free will connect . \ninformed him as per the product received we have updated the same  -said ok",
+          "REASON": "Add/Edit/Delete Products"
+        },
+        {
+          "ACTION_TAKEN": "Media Related",
+          "CATAGEORY": "Catalog/website related",
+          "CUSTOMER_TICKET_CLOSEDATE": "15-Jul-2026",
+          "CUSTOMER_TICKET_ID": "10534510",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "Shared products added in catalog \nclient going to office, wants to call back after 30 minutes\n\n\n15 Jul 2026 12:27:56 PM, Updated by Md Sanaullah (115119)  through NewSTSupdate(WEBERP)\n   Comments: Call the client about wc1\nclient going to office, wants to call back after 30 minutes  \n\tCall Update : - Service | Not Talked | MDC\n\n\t\n\tTBRO Edit :15-Jul-2026 | 13:00 | Call Update\n\n\n15 Jul 2026 12:27:44 PM, Updated by Md Sanaullah (115119)  through WEBERP\n   Mail CC: [EMAIL],[EMAIL],[EMAIL]\n   Comments: Called through Single Leg C2C for DSR\nCall was made from [PHONE] to 79*****647\nCall Type : Outgoing\nCall Status : Answered\nCall Duration : 46 seconds\nCall Recording Url : [URL]",
+          "REASON": "Media Related"
+        }
+      ],
+      "SERVICE_VINTAGE": "0 year 2 months and 30 days",
+      "WIP_TICKET_BUCKET": [],
+      "account_manager_bd": {
+        "did": "07947157939",
+        "email": "[REDACTED]",
+        "empid": "115119",
+        "name": "Md Sanaullah"
+      },
+      "account_manager_fsf": {
+        "did": "07947157939",
+        "email": "[REDACTED]",
+        "empid": "115119",
+        "name": "Md Sanaullah"
+      },
+      "address": "[REDACTED]",
+      "address_verification_status": false,
+      "approved_product_count": "5",
+      "avg_rating_count": 0,
+      "bl_active_dau_30": 2,
+      "catalog_url": "[URL]",
+      "city": "Indore",
+      "company_name": "Shri Radhakrishn Enterprises",
+      "company_type": "Proprietor",
+      "country": "India",
+      "customer_name": "Raghav Agrawal",
+      "customer_type": "Paid",
+      "customer_vintage": "2M",
+      "email1": "[REDACTED]",
+      "fcp_flag": 0,
+      "first_name": "Raghav",
+      "freeshowroom_alias_im": "shriradhakrishnenterprises-indore",
+      "glid": "271504729",
+      "glusr_customer_type": "CATALOG",
+      "glusr_custtype_id": 2,
+      "glusr_disable_errmsg_value": "",
+      "glusr_disabled_reason": "",
+      "glusr_usr_approv": "A",
+      "glusr_usr_listing_status": "TFL",
+      "gst_availability": "",
+      "gst_last_filling": "",
+      "gst_nature_of_business": "Manufacturer",
+      "gst_new": "[GST]",
+      "gst_registration_since": "2026-01-12T00:00:00Z",
+      "gst_status": "Verified",
+      "gst_turnover": "0 - 40 L",
+      "high_churn": false,
+      "high_risk_suspected": "No",
+      "highest_service": "MDC Pro",
+      "iec_availibility": "",
+      "iec_status": "",
+      "input_email_verification_status": "[REDACTED]",
+      "input_mobile_verification_status": "[REDACTED]",
+      "is_catalog": "-1",
+      "is_nach_active": "0",
+      "last_3_tickets_disposition": null,
+      "last_call_details": [
+        {
+          "COMMENTS": "Call the client about services and DAU \r\nClient consume 1 lead and said will check later and cut the call ",
+          "ENTERED_ON": "19-Aug-2026"
+        }
+      ],
+      "last_name": "Agrawal",
+      "nach_deduction_date": "2026-10-10",
+      "nach_status": [
+        {
+          "DIS_TEXT": "Active - End Dt. 13-Jul-2056",
+          "NACH_NEXT_DEDUCTION": "2026-10-10",
+          "S_NAME": "MDC Pro"
+        }
+      ],
+      "nach_stopped_date": "",
+      "payment_invoice_date": "11-Sep-2026",
+      "payment_plan": "Monthly",
+      "payment_receipt_date": "10-Oct-26",
+      "payment_receipt_date_new": "10-SEP-2026",
+      "rating_count": 0,
+      "registered_since_with_indiamart": "0 Y 3 M",
+      "renewal_date": "",
+      "renewal_status": "",
+      "stsid": 59446007,
+      "tempblock_status": "",
+      "ticket_count": "0",
+      "top_city_rest_of_india": "",
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106463+05:30"
+      },
+      "vertical_name": "Tele-Monthly Welcome [TMW]",
+      "workorder_details": [
+        {
+          "SERVICE_ACTIVITY_FLAG_TTS": 2,
+          "WO_COMPLETED_ON": "11-Sep-26",
+          "WO_ID": 13339747,
+          "WO_ISSUEDDATE": "11-Sep-26",
+          "WO_PAID_TYPE": "Paid",
+          "WO_SERVICE_ID": 376,
+          "WO_STATUS": "Completed"
+        }
+      ]
+    },
+    "ticketsdetails": {
+      "BS_TICKETS": null,
+      "WIP_LEGAL_TICKETS": null,
+      "WIP_OPS_TICKETS": null,
+      "bs_conflict_status_since_2020": "",
+      "current": {
+        "tickets": null
+      },
+      "glid": "271504729",
+      "last_7_days": {
+        "board_social_media_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": null,
+        "total_ticket_count": 0,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "last_8_to_90_days": {
+        "board_social_media_ticket_count": 0,
+        "bs_conflict_status": "No",
+        "dt_ticket_count": 0,
+        "employee_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": [
+          {
+            "ticket_history": "\"Anish Kumar(47203)\" Updated Customer Ticket(10551939) On 23-Jul-2026 13:50:48 PM\nMail To: [EMAIL]\nMail Cc: [EMAIL]\nStatus changed from \"W-I-P\" to \"Completed\"\n============== Reason code==============\nCategory: Catalog/website related\tAction Taken: Add/Edit/Delete Products\tReason: Add/Edit/Delete Products\n====================================\nComments : Closing RCA: Added \n\nCalled to client on prim no nr . \nOn Sec no -Father picked the call -said he used to be busy , once free will connect . \ninformed him as per the product received we have updated the same  -said ok\n\nClosing RCA: Added \n\nCalled to client on prim no nr . \nOn Sec no -Father picked the call -said he used to be busy , once free will connect . \ninformed him as per the product received we have updated the same  -said ok\nEmail Sent to Client\nNotification Sent to Client\n\n\n\"Anish Kumar(47203)\" Updated Customer Ticket(10551939) on Jul 23, 2026, 01:50:38 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Call Update Done.\n   Comments: Closing RCA: Added \n\nCalled to client on prim no nr . \nOn Sec no -Father picked the call -said he used to be busy , once free will connect . \ninformed him as per the product received we have updated the same  -said ok \n\n\"Md Sanaullah(115119)\" Updated Customer Ticket(10551939) on Jul 23, 2026, 11:16:27 AM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Client did not pick call \n\n\"Md Sanaullah(115119)\" Updated Customer Ticket(10551939) on Jul 22, 2026, 10:21:48 AM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Not Answering  \n\n\"Md Sanaullah(115119)\" Updated Customer Ticket(10551939) on Jul 20, 2026, 10:41:02 AM\n   WIP status changed from Untouched to Customer Response Pending \n   Comments: Shared product added as per open W/O  \n\n\"Self Help (78917)\" Updated Customer Ticket(10551939) on 18-Jul-2026 13:48:30 PM\n\tMail To: [EMAIL]\n\t\n\tComments: Seller shared a Photo on WA9696, check Whatsapp history and help :[URL] \n\n\nWA_9696 Issue the customer ticket 18-07-2026 13:18:13 - Seller shared a Photo on WA9696, check Whatsapp history and help :[URL]",
+            "ticket_id": "10551939",
+            "ticket_issue_date": "18-JUL-26",
+            "ticket_opening_comments": "Seller shared a Photo on WA9696, check Whatsapp history and help :[URL]",
+            "ticket_status": "C",
+            "ticket_type": "Catalog/website related"
+          },
+          {
+            "ticket_history": "\"Md Sanaullah(115119)\" Updated Customer Ticket(10534510) On 15-Jul-2026 13:03:51 PM\nMail To: [EMAIL]\nMail Cc: [EMAIL]\nStatus changed from \"W-I-P\" to \"Completed\"\n============== Reason code==============\nCategory: Catalog/website related\tAction Taken: Media Related\tReason: Media Related\n====================================\nComments : Shared products added in catalog \nclient going to office, wants to call back after 30 minutes\n\n\n15 Jul 2026 12:27:56 PM, Updated by Md Sanaullah (115119)  through NewSTSupdate(WEBERP)\n   Comments: Call the client about wc1\nclient going to office, wants to call back after 30 minutes  \n\tCall Update : - Service | Not Talked | MDC\n\n\t\n\tTBRO Edit :15-Jul-2026 | 13:00 | Call Update\n\n\n15 Jul 2026 12:27:44 PM, Updated by Md Sanaullah (115119)  through WEBERP\n   Mail CC: [EMAIL],[EMAIL],[EMAIL]\n   Comments: Called through Single Leg C2C for DSR\nCall was made from [PHONE] to 79*****647\nCall Type : Outgoing\nCall Status : Answered\nCall Duration : 46 seconds\nCall Recording Url : [URL]\nEmail Sent to Client\nNotification Sent to Client\n\n\n15 JUL 2026 12:57:46 PM, Updated by Md Sanaullah(115119) Through VideoMeetButton(WebERP)\r\n\tComments:  \r\n\tCall Update : - Others | Talked and APPT | \n\r\tAppointment scheduled for :15-Jul-2026:12:00\r\n\t\r\n\r\n14 JUL 2026 11:38:17 AM, Updated by Md Sanaullah(115119) Through VideoMeetButton(WebERP)\r\n\tComments:  \r\n\tCall Update : - Others | Talked and APPT | \n\r\tAppointment scheduled for :14-Jul-2026:11:30\r\n\t\r\n\r\nWA_9696 Issue the customer ticket 13-07-2026 14:55:38 - Seller shared a Photo on WA9696, check Whatsapp history and help :[URL]",
+            "ticket_id": "10534510",
+            "ticket_issue_date": "13-JUL-26",
+            "ticket_opening_comments": "Seller shared a Photo on WA9696, check Whatsapp history and help :[URL]",
+            "ticket_status": "C",
+            "ticket_type": "Catalog/website related"
+          }
+        ],
+        "total_ticket_count": 2,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "upload_metadata": {
+        "upload_modid": "global_context_consumer_context_uid",
+        "upload_time": "2026-10-10T18:47:20.389106915+05:30"
+      },
+      "wip_tickets": {
+        "ticket_id": "",
+        "ticket_issue_date": "",
+        "ticket_opening_comments": "",
+        "ticket_status": "",
+        "ticket_type": ""
+      }
+    }
+  },
+  "datasets": {
+    "buyer": {
+      "gc_enquiry_messages.csv": [
+        {
+          "reply_id": "2377513681",
+          "query_id": "3159340323",
+          "sequence": "1",
+          "sender_glid": "271504729",
+          "receiver_glid": "103650099",
+          "reply_date": "2026-07-17 16:37:44",
+          "subject": "BHAVESH, you have received a response from Shri Radhakrishn Enterprises, Indore",
+          "reply_text": "Hi BHAVESH,\n\nYour requirement for Garbage and Waste Bags on IndiaMART has been received.\n\nWe discussed over the call earlier regarding your requirement. It was a nice conversation We will share further updates.",
+          "read_status": "0",
+          "template_flag": "120",
+          "seller_glid": "271504729",
+          "message_from": "seller"
+        },
+        {
+          "reply_id": "2370937156",
+          "query_id": "3157095559",
+          "sequence": "1",
+          "sender_glid": "271504729",
+          "receiver_glid": "254721161",
+          "reply_date": "2026-07-13 14:56:53",
+          "subject": "Hi Kunal, , Black Polythene Bag is Available with Shri Radhakrishn Enterprises. Respond Now!",
+          "reply_text": "Hi Kunal, yes, Black Polythene Bag is available",
+          "read_status": "-2",
+          "first_read_date": "2026-07-13 15:59:58",
+          "template_flag": "151",
+          "seller_glid": "271504729",
+          "message_from": "seller"
+        }
+      ],
+      "gc_whatsapp_chatbot_conversations.csv": [
+        {
+          "chat_id": "423363573",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "source": "WhatsApp",
+          "bot_reply": "Hi! You just spoke with *Skyland Polymer* 📞\nWas the call helpful?",
+          "intent": "WA_Call_Feedback",
+          "action_type": "nudge",
+          "entry_date": "2026-09-24 18:44:30.000"
+        },
+        {
+          "chat_id": "423354972",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "source": "WhatsApp",
+          "bot_reply": "Hi! You just spoke with *Supreme Shoe Industry* 📞\nWas the call helpful?",
+          "intent": "WA_Call_Feedback",
+          "action_type": "nudge",
+          "entry_date": "2026-09-24 18:36:54.000"
+        },
+        {
+          "chat_id": "423004425",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Next to Virgin",
+          "bot_reply": "Thank you message templated",
+          "intent": "Msite_BL",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:39:11.000"
+        },
+        {
+          "chat_id": "423004394",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Guaranteed",
+          "bot_reply": "Please Enter Application\nCarry Bag\nBlow Molding\nDrip Pipe\n\n More options\nShrink Film\nMolding\nBubble Sheets",
+          "intent": "Msite_BL_Spec",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:39:10.000"
+        },
+        {
+          "chat_id": "423004180",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "1000",
+          "bot_reply": "Please Enter Grade\nFilm Grade\nSecond Grade\nGuaranteed\n\n More options\nNext to Virgin\nDull\nPremium",
+          "intent": "Msite_BL_Quantity",
+          "action_type": "typed",
+          "entry_date": "2026-09-24 13:39:00.000"
+        },
+        {
+          "chat_id": "423003932",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Natural",
+          "bot_reply": "How many *kg*?",
+          "intent": "Msite_BL",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:38:49.000"
+        },
+        {
+          "chat_id": "423003904",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Natural",
+          "intent": "Msite_BL_Spec",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:38:48.000"
+        },
+        {
+          "chat_id": "423003743",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "[URL]\n\nHello *Supreme Shoe Industry*,\nNeed best price for White Natural Ld Reprocessed Granules, For Plastic Industry, Packaging Type: Loose",
+          "bot_reply": "Please Enter Color\nNatural\nBlack\nWhite\n\n More options\nMilky\nDull Natural\nSemi Natural",
+          "intent": "Msite_BL|Free_FLOW",
+          "action_type": "pre-filled",
+          "entry_date": "2026-09-24 13:38:40.000"
+        },
+        {
+          "chat_id": "365329953",
+          "glid": "271504729",
+          "session_id": "89a9ab99-ad30-48d0-af99-6bedc4ae31b8",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Add Product",
+          "bot_reply": "Your photo has been uploaded.\nAdd your photo as a Product \nAdd to Catalog: [URL]",
+          "intent": "Photo_Menu_Sell",
+          "action_type": "clicked",
+          "entry_date": "2026-07-31 00:20:26.000"
+        },
+        {
+          "chat_id": "365329921",
+          "glid": "271504729",
+          "session_id": "89a9ab99-ad30-48d0-af99-6bedc4ae31b8",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "bot_reply": "{\"queryImage\":{\"img_src\":\"http:\\/\\/5.imimg.com\\/data5\\/WA_9696\\/Default\\/2026\\/7\\/630504281\\/JU\\/ME\\/VC\\/271504729\\/image.jpeg\",\"key\":\"img_5873\",\"status\":\"Hi \\n\\nWhat is the Photo for ?\\n Add Product \\nComplaint\",\"item_id\":\"\",\"is_img\":true}}",
+          "intent": "size of image is less than 500*500",
+          "action_type": "image/jpeg",
+          "entry_date": "2026-07-31 00:20:22.000"
+        },
+        {
+          "chat_id": "354124851",
+          "glid": "271504729",
+          "session_id": "2db7e0f6-4492-46c6-9635-a6ac5ffdea2c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Add Product",
+          "bot_reply": "Your photo has been uploaded.\nAdd your photo as a Product \nAdd to Catalog: [URL]",
+          "intent": "Photo_Menu_Sell",
+          "action_type": "clicked",
+          "entry_date": "2026-07-18 13:48:40.000"
+        },
+        {
+          "chat_id": "354124703",
+          "glid": "271504729",
+          "session_id": "2db7e0f6-4492-46c6-9635-a6ac5ffdea2c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "bot_reply": "We currently do not support video messages. Please type your query.",
+          "intent": "user tries to upload file other than images, ..",
+          "entry_date": "2026-07-18 13:48:30.000"
+        }
+      ],
+      "gc_buyer_call_extractions.csv": [
+        {
+          "file_id": "5262621",
+          "glid": "271504729",
+          "seller_role_on_call": "BUYER",
+          "call_date": "2026-09-24 08:14:42.670",
+          "file_duration_sec": "114",
+          "is_b2b": "True",
+          "file_intent": "requirement",
+          "languages": "['Hindi','English']",
+          "products_discussed": "Reprocessed LD Granules; Imported LD Natural White Granules",
+          "categories": "Reprocessed LD Granules; Natural LD Plastic Granules",
+          "prices_quoted": "135",
+          "specs_discussed": "Type: Reprocessed; Material: LD; Origin: Imported; Color: Natural White",
+          "stock_status": "in stock; not sold"
+        }
+      ]
+    },
+    "seller": {
+      "gc_seller_profile.csv": [
+        {
+          "fk_glusr_usr_id": "271504729",
+          "seller_city": "Indore",
+          "seller_district": "Indore",
+          "seller_state": "Madhya Pradesh",
+          "seller_pincode": "[REDACTED]",
+          "business_type": "Proprietorship",
+          "annual_turnover": "0 - 40 L",
+          "nature_of_business": "Manufacturer",
+          "nature_of_business_secondary": "Factory / Manufacturing,Wholesale Business,Retail Business",
+          "gst_registration_year": "2026",
+          "top_category_1": "D-Cut Non Woven Bags",
+          "top_category_2": "Garbage and Waste Bags",
+          "top_category_3": "LD Granules",
+          "top_parent_category": "Non Woven Bag",
+          "top_category_group": "Packaging Material, Supplies & Machines",
+          "num_categories": "8",
+          "eng_answered_calls_90d": "0",
+          "eng_call_attempts_90d": "1",
+          "eng_call_attempts_1yr": "1",
+          "eng_pickup_ratio_90d": "0.0",
+          "eng_pickup_ratio_1yr": "0.0",
+          "eng_long_calls_90d": "0",
+          "eng_short_calls_90d": "0",
+          "eng_product_count": "10",
+          "eng_products_modified_90d": "10.0",
+          "eng_products_modified_1yr": "10.0",
+          "bot_attempts": "1",
+          "bot_answered": "1",
+          "calls_meeting_fixed": "0",
+          "calls_not_interested": "0",
+          "calls_general": "1",
+          "calls_call_later": "0",
+          "bot_answer_rate": "1.0",
+          "avg_answered_call_sec": "40",
+          "company_name": "Shri Radhakrishn Enterprises",
+          "customer_type": "CATALOG",
+          "is_paid": "-1",
+          "listing_status": "TFL",
+          "mobile_verified_flag": "[REDACTED]",
+          "email_verified_flag": "[REDACTED]",
+          "gst_verified_flag": "1",
+          "gst_flag": "1",
+          "is_pan_number_available": "1",
+          "business_type_flag": "0",
+          "visiting_card_flag": "1"
+        }
+      ],
+      "gc_enquiries_received.csv": [
+        {
+          "query_id": "3179662232",
+          "enquiry_date": "2026-09-14 19:17:25",
+          "buyer_glid": "38876835",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Transparent Ld Liner Bag from Shrikant via IndiaMART",
+          "message": "I am interested in Transparent Ld Liner Bag",
+          "mcat_id": "154416",
+          "product_name": "Transparent Ld Liner Bag",
+          "source_module": "DIR",
+          "read_status": "0",
+          "buyer_city": "Indore",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "Shree Enterprises",
+          "buyer_designation": "Indore",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3173651715",
+          "enquiry_date": "2026-08-27 14:11:03",
+          "buyer_glid": "182382807",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Nursery Poly Bag from Vinay via IndiaMART",
+          "message": "I am interested in Nursery Poly Bag",
+          "mcat_id": "139617",
+          "product_name": "Nursery Poly Bag",
+          "source_module": "ANDWEB",
+          "read_status": "0",
+          "buyer_city": "Dewas",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "Vijay dhaba",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3172471158",
+          "enquiry_date": "2026-08-24 03:37:44",
+          "buyer_glid": "23711889",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Black Garbage Bag from Shubham via IndiaMART",
+          "message": "I am interested in Black Garbage Bag",
+          "mcat_id": "11878",
+          "product_name": "Black Garbage Bag",
+          "source_module": "IMOB",
+          "read_status": "-3",
+          "first_read_date": "2026-09-24 13:31:13",
+          "buyer_city": "Dewas",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "Sm18 Enterprises",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3166121595",
+          "enquiry_date": "2026-08-06 00:02:40",
+          "buyer_glid": "205437531",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for 80L Black Biodegradable Garbage Bag from Ayush via IndiaMART",
+          "message": "I am interested in 80L Black Biodegradable Garbage Bag",
+          "mcat_id": "139903",
+          "product_name": "80L Black Biodegradable Garbage Bag",
+          "source_module": "ANDWEB",
+          "read_status": "0",
+          "buyer_city": "Indore",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "Umeed Enterprises",
+          "buyer_designation": "CEO",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3162631453",
+          "enquiry_date": "2026-07-27 13:19:42",
+          "buyer_glid": "272364915",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Biodegradable Garbage Bags from Solanki Enterprises",
+          "message": "Buyer Searched for biodegradable garbage bags\n\nDimensions (L x W): 19 x 21 inches",
+          "mcat_id": "139903",
+          "product_name": "Biodegradable Garbage Bags",
+          "source_module": "ASTBUY",
+          "read_status": "-3",
+          "first_read_date": "2026-07-31 11:44:25",
+          "buyer_city": "Indore",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3159340323",
+          "enquiry_date": "2026-07-17 16:33:55",
+          "buyer_glid": "103650099",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Garbage and Waste Bags from BHAVESH",
+          "message": "Quantity: 1   Ton\nDimensions: 19 x 21 inch\nColor: Black\nProbable Order Value: Rs. 72,000 - 96,000\nProbable Requirement Type: Business Use",
+          "mcat_id": "11878",
+          "product_name": "Garbage and Waste Bags",
+          "source_module": "ASTBUY",
+          "read_status": "-3",
+          "first_read_date": "2026-07-17 16:34:11",
+          "buyer_city": "Indore",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "V Square Ventures",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        },
+        {
+          "query_id": "3157095559",
+          "enquiry_date": "2026-07-11 10:08:48",
+          "buyer_glid": "254721161",
+          "seller_glid": "271504729",
+          "subject": "Enquiry for Black Polythene Bag from Kunal via IndiaMART",
+          "message": "I am interested in Black Polythene Bag",
+          "mcat_id": "7170",
+          "product_name": "Black Polythene Bag",
+          "source_module": "DIR",
+          "read_status": "-3",
+          "first_read_date": "2026-07-13 14:51:05",
+          "buyer_city": "Rau",
+          "buyer_state": "Madhya Pradesh",
+          "buyer_country": "India",
+          "buyer_company": "Sem Solutions",
+          "seller_city": "Indore",
+          "seller_company": "Shri Radhakrishn Enterprises"
+        }
+      ],
+      "gc_enquiry_messages.csv": [
+        {
+          "reply_id": "2463677968",
+          "query_id": "3179662232",
+          "sequence": "1",
+          "sender_glid": "38876835",
+          "receiver_glid": "271504729",
+          "reply_date": "2026-09-14 19:47:28",
+          "subject": "Re: Enquiry for Transparent Ld Liner Bag from Shrikant via IndiaMART",
+          "reply_text": "Additional details from Buyer\nColor Transparent\nProbable Requirement Type Business Use",
+          "read_status": "-2",
+          "first_read_date": "2026-09-16 14:25:21",
+          "seller_glid": "271504729",
+          "message_from": "buyer"
+        },
+        {
+          "reply_id": "2377513681",
+          "query_id": "3159340323",
+          "sequence": "1",
+          "sender_glid": "271504729",
+          "receiver_glid": "103650099",
+          "reply_date": "2026-07-17 16:37:44",
+          "subject": "BHAVESH, you have received a response from Shri Radhakrishn Enterprises, Indore",
+          "reply_text": "Hi BHAVESH,\n\nYour requirement for Garbage and Waste Bags on IndiaMART has been received.\n\nWe discussed over the call earlier regarding your requirement. It was a nice conversation We will share further updates.",
+          "read_status": "0",
+          "template_flag": "120",
+          "seller_glid": "271504729",
+          "message_from": "seller"
+        },
+        {
+          "reply_id": "2370937156",
+          "query_id": "3157095559",
+          "sequence": "1",
+          "sender_glid": "271504729",
+          "receiver_glid": "254721161",
+          "reply_date": "2026-07-13 14:56:53",
+          "subject": "Hi Kunal, , Black Polythene Bag is Available with Shri Radhakrishn Enterprises. Respond Now!",
+          "reply_text": "Hi Kunal, yes, Black Polythene Bag is available",
+          "read_status": "-2",
+          "first_read_date": "2026-07-13 15:59:58",
+          "template_flag": "151",
+          "seller_glid": "271504729",
+          "message_from": "seller"
+        }
+      ],
+      "gc_buyer_calls_received.csv": [
+        {
+          "call_id": "703965105",
+          "call_datetime": "2026-09-15 14:57:12",
+          "end_time": "14:59:35",
+          "duration_sec": "142",
+          "talk_sec": "129",
+          "call_status": "Connected",
+          "buyer_glid": "68114952",
+          "seller_glid": "271504729",
+          "caller_circle": "MP and Chattisgarh",
+          "caller_operator": "Reliance Jio (GSM)",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "700221958",
+          "call_datetime": "2026-08-24 18:24:04",
+          "end_time": "18:24:10",
+          "duration_sec": "6",
+          "talk_sec": "0",
+          "call_status": "Not connected",
+          "buyer_glid": "273771138",
+          "seller_glid": "271504729",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "699014910",
+          "call_datetime": "2026-08-18 12:25:04",
+          "end_time": "12:30:07",
+          "duration_sec": "303",
+          "talk_sec": "295",
+          "call_status": "Connected",
+          "buyer_glid": "40756858",
+          "seller_glid": "271504729",
+          "caller_circle": "MP and Chattisgarh",
+          "caller_operator": "Bharti Airtel (GSM)",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "698833460",
+          "call_datetime": "2026-08-17 13:25:16",
+          "end_time": "13:26:32",
+          "duration_sec": "76",
+          "talk_sec": "64",
+          "call_status": "Connected",
+          "buyer_glid": "36463918",
+          "seller_glid": "271504729",
+          "caller_circle": "MP and Chattisgarh",
+          "caller_operator": "Bharti Airtel (GSM)",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "696154503",
+          "call_datetime": "2026-08-01 18:00:16",
+          "end_time": "18:02:48",
+          "duration_sec": "151",
+          "talk_sec": "131",
+          "call_status": "Connected",
+          "buyer_glid": "118010584",
+          "seller_glid": "271504729",
+          "caller_circle": "Bihar and Jharkhand",
+          "caller_operator": "Reliance Jio (GSM)",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "695544841",
+          "call_datetime": "2026-07-29 15:13:53",
+          "end_time": "15:15:11",
+          "duration_sec": "77",
+          "talk_sec": "63",
+          "call_status": "Connected",
+          "buyer_glid": "86675836",
+          "seller_glid": "271504729",
+          "caller_circle": "MP and Chattisgarh",
+          "caller_operator": "Vodafone Idea Limited",
+          "transfer_flag": "0"
+        },
+        {
+          "call_id": "694453239",
+          "call_datetime": "2026-07-23 12:24:09",
+          "end_time": "12:24:19",
+          "duration_sec": "10",
+          "talk_sec": "0",
+          "call_status": "Not connected",
+          "buyer_glid": "236700295",
+          "seller_glid": "271504729",
+          "caller_circle": "Karnataka",
+          "caller_operator": "Reliance Jio (GSM)",
+          "transfer_flag": "0"
+        }
+      ],
+      "gc_buyleads_bought.csv": [
+        {
+          "purchase_id": "1323705603",
+          "purchase_date": "2026-10-01 01:41:29",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1323153872",
+          "purchase_date": "2026-09-30 01:41:51",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1322572463",
+          "purchase_date": "2026-09-29 01:43:41",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1321971516",
+          "purchase_date": "2026-09-28 01:43:36",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1321566404",
+          "purchase_date": "2026-09-27 01:49:48",
+          "buylead_id": "-3",
+          "seller_glid": "271504729",
+          "credits_used": "1400",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1321392299",
+          "purchase_date": "2026-09-27 01:41:22",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1320751414",
+          "purchase_date": "2026-09-26 01:41:32",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1320217461",
+          "purchase_date": "2026-09-25 01:42:17",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1319656911",
+          "purchase_date": "2026-09-24 01:41:27",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1319091249",
+          "purchase_date": "2026-09-23 01:41:35",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1318517993",
+          "purchase_date": "2026-09-22 01:41:41",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        },
+        {
+          "purchase_id": "1317932104",
+          "purchase_date": "2026-09-21 01:42:32",
+          "buylead_id": "-4",
+          "seller_glid": "271504729",
+          "credits_used": "200",
+          "purchase_mode": "WEB",
+          "purchase_type": "B",
+          "module": "MY"
+        }
+      ],
+      "gc_bot_calls.csv": [
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "redis_bucket": "PAM",
+          "lead_bot_version": "main_vani",
+          "call_attempt_count": "1",
+          "call_start_time": "2026-07-08 16:43:22",
+          "lead_call_duration": "40.0",
+          "lead_call_summary": "The agent from IndiaMART called the lead regarding their interest in purchasing a paid package. The agent offered a meeting with a sales executive to help improve their catalogue. The lead stated that a sales executive was already with them and a meeting was currently in progress.",
+          "disposition_label": "General (talked)",
+          "meeting_fixed": "0",
+          "has_turn_transcript": "1",
+          "has_evaluator_output": "1"
+        }
+      ],
+      "gc_bot_call_turns.csv": [
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "1",
+          "speaker": "bot",
+          "start_sec": "0",
+          "end_sec": "4.14",
+          "text": "Hello, kya aap Shri Radha Krishna Enterprises se bol rahe hain?"
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "1",
+          "speaker": "bot",
+          "start_sec": "0",
+          "end_sec": "3.11",
+          "text": "Hello? Kya aap Shri Radha Krishna Enterprises se bol rahe hain?"
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "2",
+          "speaker": "seller",
+          "start_sec": "4.14",
+          "end_sec": "4.88",
+          "text": "Han ji."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "2",
+          "speaker": "seller",
+          "start_sec": "3.11",
+          "end_sec": "4.37",
+          "text": "Haan ji."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "3",
+          "speaker": "bot",
+          "start_sec": "4.88",
+          "end_sec": "19.3",
+          "text": "Theek hai. Main IndiaMART se Payal bol rahi hoon. Maine dekha ki aapne IndiaMART ka paid package kharidne ki koshish ki thi, isliye aapki help karne ke liye aur aapke catalog ko improve karne ke liye hamare sales executive aapke saath ek chhoti si meeting..."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "3",
+          "speaker": "bot",
+          "start_sec": "4.37",
+          "end_sec": "18.96",
+          "text": "Theek hai. Main IndiaMART se Payal bol rahi hoon. Maine dekha ki aapne IndiaMART ka paid package kharidne ki koshish ki thi, isliye aapki help karne ke liye aur aapki catalog ko improve karne ke liye hamare sales executive aapke saath ek chhoti si meeting..."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "4",
+          "speaker": "seller",
+          "start_sec": "19.3",
+          "end_sec": "20.3",
+          "text": "Abhi nahin."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "4",
+          "speaker": "bot",
+          "start_sec": "18.96",
+          "end_sec": "27.81",
+          "text": "...aapke catalog ko improve karne ke liye hamare sales executive se milna faydemand hoga. Toh kal aap kis time 15 se 20 minute nikal sakte hain?"
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "5",
+          "speaker": "bot",
+          "start_sec": "20.3",
+          "end_sec": "30.6",
+          "text": "Aapke catalog ko improve karne ke liye hamare sales executive se milna faydemand hoga. Toh kal aap kis time 15 se 20 minute nikaal sakte hain?"
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "5",
+          "speaker": "seller",
+          "start_sec": "27.81",
+          "end_sec": "31.54",
+          "text": "Ye bhaiya mere paas hi baithe hain."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "6",
+          "speaker": "seller",
+          "start_sec": "30.6",
+          "end_sec": "33.1",
+          "text": "Bhaiyya mere paas paise nahin hai abhi."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "6",
+          "speaker": "bot",
+          "start_sec": "31.54",
+          "end_sec": "33.31",
+          "text": "Theek hai koi baat nahi. Aap..."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "7",
+          "speaker": "bot",
+          "start_sec": "33.1",
+          "end_sec": "36.3",
+          "text": "Theek hai. Koi baat nahin. Abhi..."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "7",
+          "speaker": "seller",
+          "start_sec": "33.31",
+          "end_sec": "36.25",
+          "text": "Meeting chal rahi hai abhi."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "8",
+          "speaker": "seller",
+          "start_sec": "36.3",
+          "end_sec": "38.3",
+          "text": "Mandi chal rahi hai abhi."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "8",
+          "speaker": "seller",
+          "start_sec": "37.89",
+          "end_sec": "39.31",
+          "text": "Haan, theek hai."
+        },
+        {
+          "attempt_id": "227383",
+          "fk_glusr_usr_id": "271504729",
+          "turn_no": "9",
+          "speaker": "bot",
+          "start_sec": "38.3",
+          "end_sec": "40",
+          "text": "Haan theek hai."
+        }
+      ],
+      "gc_executive_calls.csv": [
+        {
+          "click_to_call_id": "755080834",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "115119",
+          "module": "DSR",
+          "status": "NotAnswered",
+          "call_start_time": "2026-08-07 15:39:51",
+          "call_duration": "33",
+          "call_duration_customer": "0",
+          "ring_duration": "33"
+        },
+        {
+          "click_to_call_id": "754767635",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "115119",
+          "module": "DSR",
+          "status": "Answered",
+          "call_start_time": "2026-08-06 16:23:56",
+          "call_duration": "46",
+          "call_duration_customer": "34",
+          "ring_duration": "12"
+        },
+        {
+          "click_to_call_id": "753924519",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "72843",
+          "module": "DSR",
+          "status": "NotAnswered",
+          "call_start_time": "2026-08-04 11:18:35",
+          "call_duration": "32",
+          "call_duration_customer": "0",
+          "ring_duration": "32"
+        },
+        {
+          "click_to_call_id": "753910266",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "123001",
+          "module": "DSR",
+          "status": "NotAnswered",
+          "call_start_time": "2026-08-04 11:05:25",
+          "call_duration": "19",
+          "call_duration_customer": "0",
+          "ring_duration": "19"
+        },
+        {
+          "click_to_call_id": "753793024",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "123001",
+          "module": "DSR",
+          "status": "NotAnswered",
+          "call_start_time": "2026-08-03 17:23:32",
+          "call_duration": "32",
+          "call_duration_customer": "0",
+          "ring_duration": "32"
+        },
+        {
+          "click_to_call_id": "753647071",
+          "fk_glusr_usr_id": "271504729",
+          "fk_employeeid": "123001",
+          "module": "DSR",
+          "status": "NotAnswered",
+          "call_start_time": "2026-08-03 12:03:52",
+          "call_duration": "32",
+          "call_duration_customer": "0",
+          "ring_duration": "32"
+        }
+      ],
+      "gc_whatsapp_chatbot_conversations.csv": [
+        {
+          "chat_id": "423363573",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "source": "WhatsApp",
+          "bot_reply": "Hi! You just spoke with *Skyland Polymer* 📞\nWas the call helpful?",
+          "intent": "WA_Call_Feedback",
+          "action_type": "nudge",
+          "entry_date": "2026-09-24 18:44:30.000"
+        },
+        {
+          "chat_id": "423354972",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "source": "WhatsApp",
+          "bot_reply": "Hi! You just spoke with *Supreme Shoe Industry* 📞\nWas the call helpful?",
+          "intent": "WA_Call_Feedback",
+          "action_type": "nudge",
+          "entry_date": "2026-09-24 18:36:54.000"
+        },
+        {
+          "chat_id": "423004425",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Next to Virgin",
+          "bot_reply": "Thank you message templated",
+          "intent": "Msite_BL",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:39:11.000"
+        },
+        {
+          "chat_id": "423004394",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Guaranteed",
+          "bot_reply": "Please Enter Application\nCarry Bag\nBlow Molding\nDrip Pipe\n\n More options\nShrink Film\nMolding\nBubble Sheets",
+          "intent": "Msite_BL_Spec",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:39:10.000"
+        },
+        {
+          "chat_id": "423004180",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "1000",
+          "bot_reply": "Please Enter Grade\nFilm Grade\nSecond Grade\nGuaranteed\n\n More options\nNext to Virgin\nDull\nPremium",
+          "intent": "Msite_BL_Quantity",
+          "action_type": "typed",
+          "entry_date": "2026-09-24 13:39:00.000"
+        },
+        {
+          "chat_id": "423003932",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Natural",
+          "bot_reply": "How many *kg*?",
+          "intent": "Msite_BL",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:38:49.000"
+        },
+        {
+          "chat_id": "423003904",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Natural",
+          "intent": "Msite_BL_Spec",
+          "action_type": "clicked",
+          "entry_date": "2026-09-24 13:38:48.000"
+        },
+        {
+          "chat_id": "423003743",
+          "glid": "271504729",
+          "session_id": "4b2dc6c8-2bed-4bb6-af07-39653d00942c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "[URL]\n\nHello *Supreme Shoe Industry*,\nNeed best price for White Natural Ld Reprocessed Granules, For Plastic Industry, Packaging Type: Loose",
+          "bot_reply": "Please Enter Color\nNatural\nBlack\nWhite\n\n More options\nMilky\nDull Natural\nSemi Natural",
+          "intent": "Msite_BL|Free_FLOW",
+          "action_type": "pre-filled",
+          "entry_date": "2026-09-24 13:38:40.000"
+        },
+        {
+          "chat_id": "365329953",
+          "glid": "271504729",
+          "session_id": "89a9ab99-ad30-48d0-af99-6bedc4ae31b8",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Add Product",
+          "bot_reply": "Your photo has been uploaded.\nAdd your photo as a Product \nAdd to Catalog: [URL]",
+          "intent": "Photo_Menu_Sell",
+          "action_type": "clicked",
+          "entry_date": "2026-07-31 00:20:26.000"
+        },
+        {
+          "chat_id": "365329921",
+          "glid": "271504729",
+          "session_id": "89a9ab99-ad30-48d0-af99-6bedc4ae31b8",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "bot_reply": "{\"queryImage\":{\"img_src\":\"http:\\/\\/5.imimg.com\\/data5\\/WA_9696\\/Default\\/2026\\/7\\/630504281\\/JU\\/ME\\/VC\\/271504729\\/image.jpeg\",\"key\":\"img_5873\",\"status\":\"Hi \\n\\nWhat is the Photo for ?\\n Add Product \\nComplaint\",\"item_id\":\"\",\"is_img\":true}}",
+          "intent": "size of image is less than 500*500",
+          "action_type": "image/jpeg",
+          "entry_date": "2026-07-31 00:20:22.000"
+        },
+        {
+          "chat_id": "354124851",
+          "glid": "271504729",
+          "session_id": "2db7e0f6-4492-46c6-9635-a6ac5ffdea2c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "user_message": "Add Product",
+          "bot_reply": "Your photo has been uploaded.\nAdd your photo as a Product \nAdd to Catalog: [URL]",
+          "intent": "Photo_Menu_Sell",
+          "action_type": "clicked",
+          "entry_date": "2026-07-18 13:48:40.000"
+        },
+        {
+          "chat_id": "354124703",
+          "glid": "271504729",
+          "session_id": "2db7e0f6-4492-46c6-9635-a6ac5ffdea2c",
+          "user_type": "2",
+          "source": "WhatsApp",
+          "bot_reply": "We currently do not support video messages. Please type your query.",
+          "intent": "user tries to upload file other than images, ..",
+          "entry_date": "2026-07-18 13:48:30.000"
+        }
+      ]
+    }
+  }
+}

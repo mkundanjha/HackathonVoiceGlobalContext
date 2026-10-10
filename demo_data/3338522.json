@@ -1,0 +1,1151 @@
+{
+  "schema_version": 1,
+  "glid": "3338522",
+  "origin": "api",
+  "fetched_at": "2026-10-10T14:45:35+0530",
+  "segments": [
+    "kycdetails",
+    "activitydetails",
+    "connectdetails",
+    "ticketsdetails",
+    "BLdetails",
+    "ActualData",
+    "duplicate_glids_details"
+  ],
+  "data": {
+    "ActualData": {
+      "glid": "3338522",
+      "preferred_cities": [
+        "Bengaluru",
+        "Coimbatore",
+        "Chennai",
+        "Mysuru",
+        "Pune",
+        "Kochi"
+      ],
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507582805+05:30"
+      }
+    },
+    "BLdetails": {
+      "BL_available_gl_city": 0,
+      "active_bl_details": [],
+      "bl_available_a_rank": 0,
+      "bl_available_a_rank_pref_city": 0,
+      "bl_available_pref_city": 0,
+      "glid": "3338522",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507582067+05:30"
+      }
+    },
+    "activitydetails": {
+      "BUYER_ACTIVITY": [
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261008164214",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "161707",
+          "CATEGORY_NAME": "Solar Micro Inverter",
+          "KEYWORD": "3Kw Microinverter 6i1o",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "36824957"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261008164204",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "161707",
+          "CATEGORY_NAME": "Solar Micro Inverter",
+          "KEYWORD": "3Kw Microinverter 6i1o",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "36824957"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261005170330",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "185610",
+          "CATEGORY_NAME": "Off Grid Solar Inverter",
+          "KEYWORD": "3 kW Off-grid Solar Inverter",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "144601241"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261005162056",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "275646917"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20261005162056",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20261001112901",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "257207001"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20261001112901",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260930123433",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "6652043"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260930123433",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260930111648",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "212678140"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260930111648",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260929102003",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "19500745"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260929102003",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "3338522",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260929101736",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "6853056"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260929101736",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924144947",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "233355082"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260924144947",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924141754",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3017865"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260924141754",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260924141743",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "3017865"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260924141743",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260923111349",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "162950025"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260923111349",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "37066",
+          "CATEGORY_NAME": "Solar Inverter",
+          "KEYWORD": "Off Grid Solar Inverter -  Single Phase",
+          "PRODUCT_ID": "2855421811930",
+          "SELLER_GLUSR_ID": "3338522"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260923111339",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "162950025"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260923111339",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "37066",
+          "CATEGORY_NAME": "Solar Inverter",
+          "KEYWORD": "Off Grid Solar Inverter -  Single Phase",
+          "PRODUCT_ID": "2855421811930",
+          "SELLER_GLUSR_ID": "3338522"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260921101840",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "185727529"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260921101840",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260921101838",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "185727529"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260921101838",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "185727529"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260921101838",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260921101838",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260918103717",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "134166471"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260918103717",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260918103122",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "264134448"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260918103122",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260917123115",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "4333797"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260917123115",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260917115023",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "56316983"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260917115023",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260917114854",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "7091085"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260917114854",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260912121105",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "27804441"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260912121105",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260912102827",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "11828056"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260912102827",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        },
+        {
+          "ACTIVITY_ID": "21",
+          "ACTIVITY_TIME": "20260911150229",
+          "ACTIVITY_TYPE": "C2C",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "83845335"
+        },
+        {
+          "ACTIVITY_ID": "2382",
+          "ACTIVITY_TIME": "20260911150229",
+          "ACTIVITY_TYPE": "ENQ",
+          "CATEGORY_ID": "0",
+          "CATEGORY_NAME": "-",
+          "KEYWORD": "",
+          "PRODUCT_ID": "0",
+          "SELLER_GLUSR_ID": "0"
+        }
+      ],
+      "ISQ_DATA": {
+        "ISQ": null
+      },
+      "LAST_ENQUIRY": {
+        "DESCRIPTION": "I am interested in TV Rental 43 inches",
+        "ENQUIRY_ID": "3133682531",
+        "PRODUCT_NAME": "Enquiry for TV Rental 43 inches from Shivaji via IndiaMART",
+        "TITLE": "TV Rental 43 inches"
+      },
+      "LAST_LEAD": {
+        "DATE_R": "2026-07-17 17:22:40.455479",
+        "IMAGE_PATH1": "",
+        "IMAGE_PATH2": "",
+        "IMAGE_PATH3": "",
+        "LEAD_ID": "147915316685",
+        "TITLE": "Coffee and Tea Machine Commercial"
+      },
+      "LAST_WA8181_CHAT": [],
+      "LAST_WA9696_CHAT": [],
+      "enq_last_30_days": 36,
+      "enq_last_90_days": 103,
+      "glid": "3338522",
+      "hl_pns_received_30d": 3,
+      "hl_pns_success_30d": 66,
+      "last_3_month": {
+        "bl_active_days": 36,
+        "lms_active_days": "58 D"
+      },
+      "last_4_week": {
+        "a_rank_mcats": 43,
+        "approved_prd": 160,
+        "bl_active_days": 6,
+        "bl_cons": 10,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 100,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 432,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 4,
+        "cons_0_4_hrs_percent": 8.33,
+        "cons_4_24_hrs": 5,
+        "cons_4_24_hrs_percent": 10.42,
+        "cons_grter_1day": 3,
+        "cons_grter_1day_percent": 6.25,
+        "high_sold_mcats": 37,
+        "high_sold_mcats_percent": 42.05,
+        "lms_active_days": "23 D",
+        "location_preference": [
+          "Regional",
+          "Local",
+          "Local",
+          "Local",
+          "Local",
+          "Local"
+        ],
+        "negative_ctg_count": 4,
+        "negative_ctg_with_product_mapped": 4,
+        "notification_clicked": 10,
+        "notification_clicked_percent": 2.62,
+        "pns_call_picked": 2,
+        "pns_call_received": 3,
+        "prd_without_ctg_mapping": 4,
+        "prd_without_photo": 4,
+        "prd_without_price": 160,
+        "preferred_cities_count": 43,
+        "preferred_state": 14,
+        "premium_ctg_without_a_rank": 7,
+        "premium_ctg_without_primary_prd": 2,
+        "total_enquiry": 4,
+        "total_hide": 0,
+        "total_mcats": 88,
+        "total_negative_cities": 0,
+        "total_notifications": 382
+      },
+      "last_month": {
+        "a_rank_mcats": 8,
+        "approved_prd": 26,
+        "bl_active_days": 10,
+        "bl_cons": 11,
+        "bl_cons_app_percent": 0,
+        "bl_cons_desktop_percent": 100,
+        "bl_cons_mobile_percent": "[REDACTED]",
+        "bl_credits_alctd": 343,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cnt_neg_cities": 0,
+        "cons_0_4_hrs": 9,
+        "cons_0_4_hrs_percent": 56.25,
+        "cons_4_24_hrs": 5,
+        "cons_4_24_hrs_percent": 31.25,
+        "cons_grter_1day": 2,
+        "cons_grter_1day_percent": 12.5,
+        "cq_score": 72,
+        "ctg_without_a_rank": 1,
+        "ctg_without_primary_prd": 0,
+        "enquiry": 23,
+        "high_sold_a_rank": 5,
+        "high_sold_mcats_percent": 35.71,
+        "lms_active_days": "17 D",
+        "location_preference": "Regional",
+        "negative_ctg": 0,
+        "negative_ctg_count": 0,
+        "negative_ctg_product_mapped": 0,
+        "negative_ctg_with_product_mapped": 0,
+        "notification_clicked": 4,
+        "notification_clicked_percent": 1.52,
+        "pmcat_count": 0,
+        "prd_without_ctg_mapping": 0,
+        "prd_without_photo": 1,
+        "prd_without_price": 26,
+        "pref_state": 3,
+        "preferred_cities_count": 0,
+        "preferred_city_count": 8,
+        "premium_ctg_without_a_rank": 0,
+        "premium_ctg_without_primary_prd": 0,
+        "total_hide": 0,
+        "total_mcats": 14,
+        "total_notifications": 263
+      },
+      "last_week": {
+        "bl_active_days": 0,
+        "bl_cons": 0,
+        "blni": 0,
+        "blni_loc": 0,
+        "blni_spec": 0,
+        "blni_wrng_product": 0,
+        "cons_0_4_hrs": 0,
+        "cons_4_24_hrs": 0,
+        "cons_grter_1day": 0,
+        "lms_active_days": "4 D",
+        "total_hide": 0
+      },
+      "pns_received_30_days": 3,
+      "pns_received_90_days": 14,
+      "top3mcat_competitors": [
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Inosystek Solutions Private Limited",
+          "competitor_glusr_id": 86388032,
+          "competitor_membersince": "Oct 2019",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Aviva Smart Solutions Private Limited",
+          "competitor_glusr_id": 2206009,
+          "competitor_membersince": "Oct 2019",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Auto Power Inc",
+          "competitor_glusr_id": 4333797,
+          "competitor_membersince": "Dec 2024",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Marc Traders",
+          "competitor_glusr_id": 52985159,
+          "competitor_membersince": "Nov 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Aira Trex Solutions India Private Limited",
+          "competitor_glusr_id": 16539295,
+          "competitor_membersince": "Apr 2016",
+          "custtype_name": "LEADER",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Gravity India Technologies Private Limited",
+          "competitor_glusr_id": 4018781,
+          "competitor_membersince": "Oct 2011",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Renev Tech",
+          "competitor_glusr_id": 244197458,
+          "competitor_membersince": "Apr 2026",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Enerzolve Smart Technologies",
+          "competitor_glusr_id": 266162287,
+          "competitor_membersince": "Apr 2026",
+          "custtype_name": "CATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "YR Automation",
+          "competitor_glusr_id": 46563385,
+          "competitor_membersince": "Mar 2023",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        },
+        {
+          "catalog_url": "[URL]",
+          "competitor_city": "Bengaluru",
+          "competitor_company": "Sai Power Solutions",
+          "competitor_glusr_id": 9005351,
+          "competitor_membersince": "Jul 2022",
+          "custtype_name": "TSCATALOG",
+          "distance_city": 0,
+          "glusr_usr_id": 3338522
+        }
+      ],
+      "top3mcat_data": [
+        {
+          "hyperlocal_bl": 12,
+          "hyperlocal_paid_sellers": 58,
+          "local_bl": 27,
+          "local_paid_sellers": 93,
+          "mcat_list": "[{\"mcat_name\": \"Frequency Converters\", \"mcat_id\": \"28966\"},{\"mcat_name\": \"Industrial UPS\", \"mcat_id\": \"183040\"},{\"mcat_name\": \"Solar Power Conditioning Units\", \"mcat_id\": \"158154\"}]",
+          "total_bl": 388,
+          "total_paid_sellers": 93
+        }
+      ],
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.50758237+05:30"
+      }
+    },
+    "connectdetails": {
+      "app_sharing_counts": 0,
+      "connect_30D": [
+        {
+          "call_answered_date": "2026-10-07 12:14:32",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 12:14:25",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "Client did not pick call",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 12:13:35",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "",
+          "call_sts_update": "",
+          "meet_sts_update": "*Meeting Update Format*\r\n                                                   \r\n1. Meeting Agenda: service \r\n2. Decision Maker Name & No :shivaji varma\r\n3. Major Products/Categories :ups inverter \r\n4. Meeting Summary & Work Done :meet client discuss regarding leads and service she told i am not getting leads till keywords added told to active in portal \r\n5. ROI/Business Generated in last 6 Months :no\r\n6. Work to be Done Post Meeting :she is not give any upsell \r\n7. Comments/Pending work :need follow up  | Service  | Service  | 24-Sep-2026",
+          "meet_sucessful_date": "2026-09-24 12:53:30",
+          "met_by": "121897",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-24 12:44:59",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-24 09:44:28",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "reschedul ",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-23 10:45:19",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "Appt. Fixed",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-22 11:06:24",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "reschedule ",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-18 10:40:03",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "Service ",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-09-18 10:23:56",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "121897",
+          "call_sts_update": "Appt. Fixed",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "connect_7D": [
+        {
+          "call_answered_date": "2026-10-07 12:14:32",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 12:14:25",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "Client did not pick call",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        },
+        {
+          "call_answered_date": "2026-10-07 12:13:35",
+          "call_answered_summary": "",
+          "call_answered_transcript": "",
+          "call_by": "102642",
+          "call_sts_update": "",
+          "meet_sts_update": "",
+          "meet_sucessful_date": "",
+          "met_by": "",
+          "video_meet_by": "",
+          "video_meet_sts_update": "",
+          "video_verified_date": ""
+        }
+      ],
+      "email_outbound_details": "",
+      "glid": "3338522",
+      "last_call_summary": "",
+      "proposals_sent_counts": 0,
+      "sms_outbound_details": "",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507582149+05:30"
+      }
+    },
+    "duplicate_glids_details": {
+      "duplicate_glid": null,
+      "duplicate_paid_ids": null,
+      "glid": "3338522",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507582543+05:30"
+      }
+    },
+    "glid": 3338522,
+    "kycdetails": {
+      "LAST_10SUPPLIER_ACTIVITIES": [],
+      "LAST_TICKETS_CLM_FEEDBACK": [
+        {
+          "ACTION_TAKEN": "Less Buy Lead",
+          "CATAGEORY": "Buylead & Enquiries",
+          "CUSTOMER_TICKET_CLOSEDATE": "29-May-2026",
+          "CUSTOMER_TICKET_ID": "10389060",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "29 May 2026 01:38:25 PM, Updated by Ritu Shukla (104074)  through WEBERP\n   Mail To: [EMAIL]\n   Comments: \"Ritu Shukla(104074)\" Updated Customer Ticket(10389060) on May 29, 2026, 01:38:25 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Closure RCA:\n What was the actual issue of client understood on call? less buy leads\n What was the solution offered to resolve his query? had a word with the client,\ndiscussed the issue, she said not getting not getting the buy leads from past 2 weeks,\ndiscussed about the inquiries and calls and asked to connect on VM, client said okay,\ndiscussed about the B rank and showed her the past leads as we are getting the buy leads but leads are getting sold out,\nsuggested her filter options, and discussed about the rating nd review,\n\nclosure taken\n C-SAT response expected – Yes\n Ticket closure permission taken – Yes\n Is there any process/technical gaps Identified -No\n 360 checklist was applicable here (In case of Yes)\n1) IMA/PNS/LMS/Ratings andamp; Reviews – Discussion Done\n2) DIR IM Listing -A Rank andamp; D rank checked andamp; corrected\n",
+          "REASON": "Less BL - Location issue"
+        },
+        {
+          "ACTION_TAKEN": "Wrong Buy Lead",
+          "CATAGEORY": "Buylead & Enquiries",
+          "CUSTOMER_TICKET_CLOSEDATE": "25-Mar-2026",
+          "CUSTOMER_TICKET_ID": "10150341",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "25 MAR 2026 05:51:44 PM, Updated by Ritu Shukla (104074)\n   Mail To: [EMAIL]\n   Mail CC: [EMAIL],[EMAIL],[EMAIL]\n   Comments: \"Ritu Shukla(104074)\" Updated Customer Ticket(10150341) on Mar 25, 2026, 05:51:44 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Closure RCA:\n? What was the actual issue of client understood on call? about the visibility\n\n? What was the solution offered to resolve his query? had a word with the client,\ndiscussed about the issue, client said listing is not visible,\ntold her that shes deactivating the main products, suggested her not to do that,\nasked her to consume the maximum buy leads of hybrid solar inverter, client said currently that product is out of stock,\nsuggested her about the category change, client said will discuss with the team\ndiscussed about the buy leads, client said consumingthe buy lead but buyers are not responding,\nsuggested her to consume the fresh lead.\n\nclosure taken \n\tMeeting Update : - Others | 25-Mar-26 | Maxi | Interested | Met With:Shivaji Varma \n\tBuy Leads | done | 25-Mar-2026 \n\tDirect Queries/PNS | done | 25-Mar-2026 \n\tDemo of Seller Tools/Lead Management | done | 25-Mar-2026\n\t Video Meet Done\n\n? C-SAT response expected ? Yes\n? Ticket closure permission taken ? Yes\n? Is there any process/technical gaps Identified -Yes\n? 360 checklist was applicable here (In case of Yes)\n1) IMA/PNS/LMS/Ratings andamp; Reviews ? Discussion Done\n2) DIR IM Listing -A Rank andamp; D rank checked andamp; corrected",
+          "REASON": "BL - Non Responsive Buyers"
+        },
+        {
+          "ACTION_TAKEN": "Less Buy Lead",
+          "CATAGEORY": "Buylead & Enquiries",
+          "CUSTOMER_TICKET_CLOSEDATE": "25-Oct-2025",
+          "CUSTOMER_TICKET_ID": "9598722",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "25 OCT 2025 12:25:21 PM, Updated by Ritu Shukla (104074)\n   Mail To: [EMAIL]\n   Mail CC: [EMAIL],[EMAIL],[EMAIL]\n   Comments: \"Ritu Shukla(104074)\" Updated Customer Ticket(9598722) on Oct 25, 2025, 12:25:18 PM\n   WIP status changed from Customer Response Pending to Customer Response Pending \n   Comments: Closure RCA:\n? What was the actual issue of client understood on call? less buy leads \n? What was the solution offered to resolve his query? had a word with the client,\ndiscussed about the services, and asked to join on VM, client joined the same\nclient was not getting much leads, so asked her to apply the filter and the loaction filter options also showed her the past leads options and asked her to mark interested\ndiscussed about the direct inquiries and asked her to share the feedback on the inquiries\nalso discussed about the low score products and suggested her to work on it, client said okay\n\nclosure taken\n? C-SAT response expected ? Yes\n? Ticket closure permission taken ? Yes\n? Is there any process/technical gaps Identified -No\n? 360 checklist was applicable here -Yes\n1) IMA/PNS/LMS/Ratings andamp; Reviews ? Discussion Done\n2) DIR IM Listing -A Rank andamp; D rank checked andamp",
+          "REASON": "Hyper Local"
+        },
+        {
+          "ACTION_TAKEN": "Seller Tool",
+          "CATAGEORY": "Seller Panel related",
+          "CUSTOMER_TICKET_CLOSEDATE": "29-May-2025",
+          "CUSTOMER_TICKET_ID": "9051808",
+          "CUSTOMER_TICKET_STATUS": "C",
+          "FEEDBACK": "Not Submitted",
+          "FK_GROUP_IDS": "2",
+          "LAST_COMMENTS": "29 MAY 2025 05:57:34 PM, Updated by Km Sonam (97361)  through NewSTSupdate(WEBERP)\n   Mail To: [EMAIL]\n   Comments: Discuss about Concern. \nTold him Video meeting already done.\nCloser taken.  \n\tCall Update : - Ticket | Talked | Maxi\n\n\n29 MAY 2025 05:55:19 PM, Updated by Km Sonam (97361)\n   Mail To: [EMAIL]\n   Mail CC: [EMAIL],[EMAIL],[EMAIL]\n   Comments: Called through Single Leg C2C for DSR\nCall was made from [PHONE] to 99*****883\nCall Type : Outgoing\nCall Status : Answered\nCall Duration : 79 seconds\nCall Recording Url : [URL]\n",
+          "REASON": "Seller/ Buyer Panel Guided"
+        }
+      ],
+      "SERVICE_VINTAGE": "7 year 10 months and 14 days",
+      "WIP_TICKET_BUCKET": [],
+      "account_manager_bd": {
+        "did": "07947160040",
+        "email": "[REDACTED]",
+        "empid": "102642",
+        "name": "Manish Bisht"
+      },
+      "account_manager_fsf": {
+        "did": "07947162468",
+        "email": "[REDACTED]",
+        "empid": "121897",
+        "name": "Punith Kumar  C"
+      },
+      "address": "[REDACTED]",
+      "address_verification_status": false,
+      "approved_product_count": "26",
+      "avg_rating_count": 4.2,
+      "bl_active_dau_30": 8,
+      "catalog_url": "[URL]",
+      "city": "Bengaluru",
+      "company_name": "Unipar Energy Systems Pvt. Ltd.",
+      "company_type": "Ltd. Company",
+      "country": "India",
+      "customer_name": "Shivaji Varma",
+      "customer_type": "Paid",
+      "customer_vintage": "9Y",
+      "email1": "[REDACTED]",
+      "fcp_flag": 0,
+      "first_name": "Shivaji",
+      "freeshowroom_alias_im": "unipar",
+      "glid": "3338522",
+      "glusr_customer_type": "STAR",
+      "glusr_custtype_id": 12,
+      "glusr_disable_errmsg_value": "",
+      "glusr_disabled_reason": "",
+      "glusr_usr_approv": "A",
+      "glusr_usr_listing_status": "LST",
+      "gst_availability": "",
+      "gst_last_filling": "",
+      "gst_nature_of_business": "Manufacturer",
+      "gst_new": "[GST]",
+      "gst_registration_since": "2017-07-01T00:00:00Z",
+      "gst_status": "Verified",
+      "gst_turnover": "5 - 25 Cr",
+      "high_churn": false,
+      "high_risk_suspected": "No",
+      "highest_service": "Star",
+      "iec_availibility": "",
+      "iec_status": "",
+      "input_email_verification_status": "[REDACTED]",
+      "input_mobile_verification_status": "[REDACTED]",
+      "is_catalog": "-1",
+      "is_nach_active": "",
+      "last_3_tickets_disposition": null,
+      "last_call_details": [
+        {
+          "COMMENTS": "Appt. Fixed",
+          "ENTERED_ON": "18-Sep-2026"
+        }
+      ],
+      "last_name": "Varma",
+      "nach_deduction_date": "0",
+      "nach_status": [
+        {
+          "DIS_TEXT": "",
+          "NACH_NEXT_DEDUCTION": "0",
+          "S_NAME": ""
+        }
+      ],
+      "nach_stopped_date": "",
+      "payment_invoice_date": "29-Dec-2025",
+      "payment_plan": "Annual",
+      "payment_receipt_date": "21-Dec-22",
+      "payment_receipt_date_new": "31-JAN-2025",
+      "rating_count": 19,
+      "registered_since_with_indiamart": "15 Y 5 M",
+      "renewal_date": "",
+      "renewal_status": "",
+      "stsid": 3342209,
+      "tempblock_status": "",
+      "ticket_count": "0",
+      "top_city_rest_of_india": "Bengaluru, Pune, Ernakulam, Kochi, Mumbai, Coimbatore, Mysuru, Chennai",
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507581977+05:30"
+      },
+      "vertical_name": "KCD",
+      "workorder_details": null
+    },
+    "ticketsdetails": {
+      "BS_TICKETS": null,
+      "WIP_LEGAL_TICKETS": null,
+      "WIP_OPS_TICKETS": null,
+      "bs_conflict_status_since_2020": "",
+      "current": {
+        "tickets": null
+      },
+      "glid": "3338522",
+      "last_7_days": {
+        "board_social_media_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": null,
+        "total_ticket_count": 0,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "last_8_to_90_days": {
+        "board_social_media_ticket_count": 0,
+        "bs_conflict_status": "No",
+        "dt_ticket_count": 0,
+        "employee_ticket_count": 0,
+        "irate_complaint_count": 0,
+        "negative_feedback_count": 0,
+        "tickets": null,
+        "total_ticket_count": 0,
+        "whatsapp_negative_feedback_count": 0
+      },
+      "upload_metadata": {
+        "upload_modid": "getcontextexternal",
+        "upload_time": "2026-10-10T14:45:35.507582723+05:30"
+      },
+      "wip_tickets": {
+        "ticket_id": "",
+        "ticket_issue_date": "",
+        "ticket_opening_comments": "",
+        "ticket_status": "",
+        "ticket_type": ""
+      }
+    }
+  },
+  "datasets": {
+    "buyer": {},
+    "seller": {}
+  }
+}

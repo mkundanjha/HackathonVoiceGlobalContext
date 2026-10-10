@@ -1,0 +1,97 @@
+{
+  "exported_at": "2026-10-10T16:16:52.090017+00:00",
+  "records": [
+    {
+      "glid": "1834784",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T14:11:40+0530"
+    },
+    {
+      "glid": "624518",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T17:22:05+0530"
+    },
+    {
+      "glid": "7444262",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T17:24:42+0530"
+    },
+    {
+      "glid": "271504729",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T18:55:56+0530"
+    },
+    {
+      "glid": "35481469",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T17:16:14+0530"
+    },
+    {
+      "glid": "95568576",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T16:51:39+0530"
+    },
+    {
+      "glid": "53203913",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T14:51:56+0530"
+    },
+    {
+      "glid": "3338522",
+      "status": "ready",
+      "origin": "api",
+      "fetched_at": "2026-10-10T14:45:35+0530"
+    },
+    {
+      "glid": "7195425",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2126164",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2342705",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2416597",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2498888",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2614325",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    },
+    {
+      "glid": "2929150",
+      "status": "ready",
+      "origin": "datasets",
+      "fetched_at": null
+    }
+  ],
+  "source": "existing fixtures",
+  "privacy": "Redacted contacts, credentials, tax IDs, addresses and URLs; names and business context remain."
+}
