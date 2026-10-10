@@ -1,0 +1,17 @@
+sarvam ai details/
+**/.env
+memory/
+fixtures/raw/
+fixtures/*/userctx.redacted.json
+fixtures/*/userctx.*.json.tmp
+contexts/
+**/*.md.tmp
+.venv/
+__pycache__/
+datasets/
+samples/
+/samples.zip
+*.log
+*.sqlite3
+**/.env.*
+!**/.env.example
