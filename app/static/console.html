@@ -308,9 +308,10 @@
   </main>
 </div>
 
+<script src="/static/hosted_voice.js"></script>
 <script>
 const $ = id => document.getElementById(id);
-const state = { role: 'seller', ctxRole: 'seller', ctxGeneration: 0, chatSid: null, chatGeneration: 0, selectionGeneration: 0, offset: -1, pc: null, mic: null, callStart: null, timer: null, ctx: null };
+const state = { role: 'seller', ctxRole: 'seller', ctxGeneration: 0, chatSid: null, chatGeneration: 0, selectionGeneration: 0, offset: -1, pc: null, mic: null, callStart: null, timer: null, ctx: null, voiceTransport: 'webrtc' };
 const glid = () => $('glid').value.trim();
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -632,6 +633,7 @@ function setAgentPill(s) {
   else { $('pillAgent').textContent = 'Voice agent: off'; $('pillAgent').className = 'pill'; }
 }
 async function startCall() {
+  if (state.voiceTransport === 'websocket') return startHostedCall();
   const generation = state.selectionGeneration;
   const selectedGlid = glid(), selectedRole = state.role;
   $('voiceErr').classList.remove('show');
@@ -640,6 +642,7 @@ async function startCall() {
   try {
     let s = await agentStatus();
     if (generation !== state.selectionGeneration) return;
+    if (s.transport === 'websocket') { state.voiceTransport = 'websocket'; return startHostedCall(); }
     if (!(s.running && s.glid === selectedGlid && s.role === selectedRole)) {
       await api('/api/voice/start', { glid: selectedGlid, role: selectedRole });
     }
@@ -680,6 +683,37 @@ async function startCall() {
     endCall();
     setStatus('', 'Call failed: ' + e.message);
     if (e.name === 'NotAllowedError') showErr('Microphone permission was denied. Allow it in the browser and try again.');
+  }
+}
+async function startHostedCall() {
+  const generation = state.selectionGeneration;
+  $('voiceErr').classList.remove('show');
+  $('btnCall').disabled = true;
+  setStatus('voice', 'Connecting microphone and hosted voice…');
+  let call;
+  try {
+    call = new HostedVoice({glid: glid(), role: state.role,
+      onReady: () => {
+        if (generation !== state.selectionGeneration || state.pc !== call) return;
+        $('btnCall').textContent = 'Hang up'; $('btnCall').className = 'btn hang'; $('btnCall').disabled = false;
+      },
+      onPhase: message => {
+        if (generation === state.selectionGeneration && state.pc === call) setStatus('voice', message, true);
+      },
+      onError: error => {
+        if (generation !== state.selectionGeneration || state.pc !== call) return;
+        endCall(); showErr(error.message); setStatus('', 'Call failed: ' + error.message);
+      },
+    });
+    state.pc = call;
+    await call.connect();
+    if (generation !== state.selectionGeneration || state.pc !== call) { call.close(); return; }
+    $('btnCall').textContent = 'Hang up'; $('btnCall').className = 'btn hang'; $('btnCall').disabled = false;
+  } catch (error) {
+    call?.close();
+    if (generation !== state.selectionGeneration) return;
+    endCall(); showErr(error.name === 'NotAllowedError' ? 'Allow microphone access in this browser and try again.' : error.message);
+    setStatus('', 'Call failed: ' + error.message);
   }
 }
 function iceGathered(pc) {
@@ -998,6 +1032,7 @@ async function loadRuntime() {
   try {
     const runtime = await fetch('/api/runtime').then(r => r.json());
     hostedVoiceEnabled = runtime.voice_enabled;
+    state.voiceTransport = runtime.voice_transport || 'webrtc';
     $('pillMode').textContent = runtime.context_mode === 'demo' ? 'Context: saved JSON demo' : 'Context: live API';
     if (runtime.context_mode === 'demo') {
       $('demoGlidLabel').hidden = false;
@@ -1013,9 +1048,9 @@ async function loadRuntime() {
       select.onchange = () => { if (select.value) { $('glid').value = select.value; userChanged(); } };
     }
     if (!hostedVoiceEnabled) {
-      $('btnCall').textContent = 'Voice: local only';
-      $('btnCall').title = 'This hosted demo supports chat. Browser voice uses the local WebRTC service.';
-      $('btnCall').onclick = () => showErr('Use Start chat on this deployment. Browser voice is available when running locally.');
+      $('btnCall').textContent = 'Voice disabled';
+      $('btnCall').title = 'Enable voice in the server environment to use Call.';
+      $('btnCall').onclick = () => showErr('Voice is disabled. Set ENABLE_VOICE=true; on Render also set VOICE_TRANSPORT=websocket.');
       $('pillAgent').textContent = 'Hosted demo: chat';
     }
   } catch (e) { console.warn('Runtime configuration unavailable', e); }

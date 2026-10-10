@@ -14,6 +14,8 @@ services:
       - key: GC_DEMO_DIR
         value: demo_data
       - key: ENABLE_VOICE
-        value: "false"
+        value: "true"
+      - key: VOICE_TRANSPORT
+        value: websocket
       - key: SARVAM_API_KEY
         sync: false

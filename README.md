@@ -6,6 +6,9 @@ IndiaMART Voice AI Hackathon 2.0. A GLID-keyed context layer that gives the voic
 
 For hosting without MERP access, see [Render deployment and offline demo mode](RENDER_DEPLOY.md).
 `GC_MODE=demo` uses curated JSON profiles; the default `GC_MODE=live` keeps internal API access.
+On Render, set `ENABLE_VOICE=true` and `VOICE_TRANSPORT=websocket` for browser voice
+through the hosted URL. This uses Sarvam STT/LLM/TTS one utterance at a time; speak
+after the agent finishes. Local streaming voice keeps the default `VOICE_TRANSPORT=webrtc`.
 
 ```bash
 ./setup.sh      # once: Python env, dependencies, app/.env

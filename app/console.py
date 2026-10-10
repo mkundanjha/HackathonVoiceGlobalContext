@@ -19,7 +19,7 @@ import sys
 import time
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, WebSocket
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from typing import Literal
@@ -27,6 +27,7 @@ from contextlib import asynccontextmanager
 import demo_history
 
 import chat_app
+import hosted_voice
 from context_api import context_mode, available_demo_glids
 from events import emit, read_events
 from view_builder import CONTEXTS_DIR, SAMPLES_DIR, get_view, read_view_file
@@ -52,6 +53,13 @@ def voice_enabled() -> bool:
     return os.getenv("ENABLE_VOICE", "true").lower() not in ("false", "0", "no")
 
 
+def voice_transport() -> str:
+    transport = os.getenv("VOICE_TRANSPORT", "webrtc").lower()
+    if transport not in ("webrtc", "websocket"):
+        raise ValueError("VOICE_TRANSPORT must be webrtc or websocket")
+    return transport
+
+
 @app.get("/healthz")
 def health():
     return {"ok": True}
@@ -61,7 +69,20 @@ def health():
 def runtime_info():
     mode = context_mode()
     return {"context_mode": mode, "demo_glids": available_demo_glids() if mode == "demo" else [],
-            "voice_enabled": voice_enabled()}
+            "voice_enabled": voice_enabled(), "voice_transport": voice_transport()}
+
+
+@app.websocket("/api/voice/ws")
+async def hosted_voice_call(websocket: WebSocket):
+    if not voice_enabled() or voice_transport() != "websocket":
+        await websocket.close(code=1008)
+        return
+    await hosted_voice.serve(websocket)
+
+
+@app.get("/static/hosted_voice.js")
+def hosted_voice_script():
+    return FileResponse(APP_DIR / "static" / "hosted_voice.js", media_type="application/javascript")
 
 # Chat endpoints are the same functions the plain chat app uses.
 app.post("/api/chat/start")(chat_app.start)
@@ -269,6 +290,8 @@ def voice_start(req: UserRequest):
     if not voice_enabled():
         raise HTTPException(503, "Voice is disabled on this deployment; use Start chat for the hosted demo")
     _check(req.glid, req.role)
+    if voice_transport() == "websocket":
+        return {"ok": True, "transport": "websocket", "websocket_path": "/api/voice/ws"}
     if demo_history.user_status(req.glid, req.role)['pending']:
         raise HTTPException(409, 'History activity is updating context; try again when the update finishes')
     _stop_voice()
@@ -295,6 +318,8 @@ def voice_stop():
 
 @app.get("/api/voice/status")
 def voice_status():
+    if voice_transport() == "websocket":
+        return hosted_voice.status()
     proc = voice["proc"]
     running = bool(proc and proc.poll() is None)
     status = {
